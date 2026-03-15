@@ -46,41 +46,17 @@ export default function ContactPage() {
   });
 
   const onSubmit = async (data: ContactFormData) => {
-    console.log('[Contact Form] Submit triggered with data:', data);
     setStatus('loading');
     try {
-      // Try fetch first and log the response
-      const formBody = new URLSearchParams();
-      formBody.append('form-name', 'contact');
-      formBody.append('name', data.name);
-      formBody.append('email', data.email);
-      formBody.append('phone', data.phone || '');
-      formBody.append('role', data.role);
-      formBody.append('organization', data.organization || '');
-      formBody.append('school', data.school || '');
-      formBody.append('subject', data.subject);
-      formBody.append('message', data.message);
-      formBody.append('centers', data.centers.join(', '));
-
-      console.log('[Contact Form] Sending to /form.html with body:', formBody.toString());
-
-      const res = await fetch('/form.html', {
+      const res = await fetch('/api/contact', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-        body: formBody.toString(),
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data),
       });
-
-      console.log('[Contact Form] Response status:', res.status);
-      console.log('[Contact Form] Response URL:', res.url);
-      console.log('[Contact Form] Response ok:', res.ok);
-
-      const responseText = await res.text();
-      console.log('[Contact Form] Response body (first 500 chars):', responseText.substring(0, 500));
-
+      if (!res.ok) throw new Error();
       setStatus('success');
       reset();
-    } catch (err) {
-      console.error('[Contact Form] Error:', err);
+    } catch {
       setStatus('error');
     }
   };
