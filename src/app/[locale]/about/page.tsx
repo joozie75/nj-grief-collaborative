@@ -153,25 +153,25 @@ export default function AboutPage() {
           {members.map((member) => (
             <Card key={member.name} className="flex flex-col">
               <CardBody className="flex-1">
-                <div className="flex items-center gap-4 mb-4">
-                  <div className="w-14 h-14 flex items-center justify-center shrink-0">
+                <div className="flex items-center gap-5 mb-4">
+                  <div className="w-20 h-20 flex items-center justify-center shrink-0">
                     {member.logo ? (
                       <Image
                         src={member.logo}
                         alt={`${member.name} logo`}
-                        width={56}
-                        height={56}
-                        className="object-contain w-14 h-14"
+                        width={80}
+                        height={80}
+                        className="object-contain w-20 h-20"
                       />
                     ) : (
-                      <div className="w-14 h-14 rounded-full bg-primary-light flex items-center justify-center">
-                        <span className="text-primary font-bold text-2xl font-serif">{member.name.charAt(0)}</span>
+                      <div className="w-20 h-20 rounded-full bg-primary-light flex items-center justify-center">
+                        <span className="text-primary font-bold text-3xl font-serif">{member.name.charAt(0)}</span>
                       </div>
                     )}
                   </div>
                   <div>
                     <h3 className="text-xl font-bold font-serif text-foreground">{member.name}</h3>
-                    <p className="text-sm text-primary">{member.serviceArea}</p>
+                    <p className="text-base text-primary font-semibold">{member.serviceArea}</p>
                   </div>
                 </div>
                 <p className="text-muted-foreground">{member.description}</p>

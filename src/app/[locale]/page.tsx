@@ -67,8 +67,12 @@ export default function Home() {
   return (
     <>
       {/* Hero */}
-      <section className="relative bg-gradient-to-br from-teal-50 via-white to-purple-50 py-20 sm:py-28 lg:py-36">
-        <div className="mx-auto max-w-7xl px-[var(--container-padding)]">
+      <section className="relative gradient-warmth py-20 sm:py-28 lg:py-36 overflow-hidden">
+        {/* Decorative blobs */}
+        <div className="absolute top-10 right-10 w-64 h-64 organic-blob bg-teal-200/20 blur-2xl" aria-hidden="true" />
+        <div className="absolute bottom-20 left-0 w-48 h-48 organic-blob-2 bg-purple-200/20 blur-2xl" aria-hidden="true" />
+        <div className="absolute top-1/2 right-1/4 w-32 h-32 organic-blob bg-green-200/15 blur-xl" aria-hidden="true" />
+        <div className="mx-auto max-w-7xl px-[var(--container-padding)] relative">
           <div className="max-w-3xl">
             <h1 className="text-4xl font-bold text-foreground sm:text-5xl lg:text-6xl font-serif">
               Supporting NJ Schools and Students Through Grief and Loss
@@ -99,7 +103,9 @@ export default function Home() {
         <SectionHeader title="Why This Matters" subtitle="Grief Is Not Rare" />
         <div className="max-w-3xl mx-auto space-y-6">
           <div className="text-center">
-            <p className="text-5xl font-bold font-serif text-primary">1 in 13</p>
+            <div className="inline-block px-8 py-6 rounded-2xl bg-gradient-to-br from-teal-50 to-purple-50 border border-teal-200/50">
+              <p className="text-6xl font-bold font-serif bg-gradient-to-r from-teal-500 to-purple-500 bg-clip-text text-transparent">1 in 13</p>
+            </div>
             <p className="mt-3 text-lg text-muted-foreground">
               children in New Jersey will experience the death of a parent or sibling by the time they reach 18 years of age.
             </p>
@@ -156,19 +162,19 @@ export default function Home() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {coalitionMembers.map((member) => (
             <Card key={member.name}>
-              <CardBody>
-                <div className="w-16 h-16 flex items-center justify-center mb-4">
+              <CardBody className="text-center">
+                <div className="w-24 h-24 flex items-center justify-center mb-4 mx-auto">
                   {member.logo ? (
                     <Image
                       src={member.logo}
                       alt={`${member.name} logo`}
-                      width={64}
-                      height={64}
-                      className="object-contain w-16 h-16"
+                      width={96}
+                      height={96}
+                      className="object-contain w-24 h-24"
                     />
                   ) : (
-                    <div className="w-14 h-14 rounded-full bg-primary-light flex items-center justify-center">
-                      <span className="text-primary font-bold text-xl font-serif">
+                    <div className="w-20 h-20 rounded-full bg-primary-light flex items-center justify-center">
+                      <span className="text-primary font-bold text-2xl font-serif">
                         {member.name.charAt(0)}
                       </span>
                     </div>
@@ -176,7 +182,7 @@ export default function Home() {
                 </div>
                 <h3 className="text-lg font-bold font-serif text-foreground">{member.name}</h3>
                 <p className="mt-2 text-sm text-muted-foreground">{member.description}</p>
-                <p className="mt-3 text-xs text-primary font-medium">{member.location}</p>
+                <p className="mt-3 text-base text-primary font-semibold">{member.location}</p>
               </CardBody>
             </Card>
           ))}
@@ -238,7 +244,9 @@ export default function Home() {
       </Section>
 
       {/* Ready to Take the Next Step — 3 audience CTA */}
-      <section className="bg-gradient-to-r from-primary to-teal-700 py-20">
+      <section className="bg-gradient-to-br from-teal-600 via-purple-600 to-teal-700 py-20 relative overflow-hidden">
+        <div className="absolute top-0 left-10 w-40 h-40 organic-blob bg-green-400/10 blur-2xl" aria-hidden="true" />
+        <div className="absolute bottom-0 right-10 w-56 h-56 organic-blob-2 bg-warm-400/10 blur-2xl" aria-hidden="true" />
         <div className="mx-auto max-w-7xl px-[var(--container-padding)]">
           <h2 className="text-3xl font-bold text-white sm:text-4xl font-serif text-center">
             Ready to Take the Next Step?

@@ -9,7 +9,7 @@ export default function Header() {
   const t = useTranslations('common');
 
   return (
-    <header className="sticky top-0 z-40 bg-white/95 backdrop-blur-sm border-b border-border">
+    <header className="sticky top-0 z-40 bg-[#fffcf9]/95 backdrop-blur-sm border-b border-teal-200/30">
       <a href="#main-content" className="skip-link">
         {t('skipToContent')}
       </a>

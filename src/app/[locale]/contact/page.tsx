@@ -14,6 +14,7 @@ const contactSchema = z.object({
   phone: z.string().optional(),
   role: z.string().min(1),
   organization: z.string().optional(),
+  school: z.string().optional(),
   subject: z.string().min(2),
   message: z.string().min(10),
   centers: z.array(z.string()).min(1, 'Please select at least one center'),
@@ -173,16 +174,28 @@ export default function ContactPage() {
               </div>
             </div>
 
-            {/* Organization */}
-            <div>
-              <label htmlFor="organization" className="block text-sm font-medium text-foreground mb-1">{t('organizationLabel')}</label>
-              <input
-                id="organization"
-                type="text"
-                {...register('organization')}
-                placeholder={t('organizationPlaceholder')}
-                className="w-full px-4 py-3 rounded-lg border border-border bg-white text-foreground placeholder-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
-              />
+            {/* Organization & School */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+              <div>
+                <label htmlFor="organization" className="block text-sm font-medium text-foreground mb-1">{t('organizationLabel')}</label>
+                <input
+                  id="organization"
+                  type="text"
+                  {...register('organization')}
+                  placeholder={t('organizationPlaceholder')}
+                  className="w-full px-4 py-3 rounded-lg border border-border bg-white text-foreground placeholder-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
+                />
+              </div>
+              <div>
+                <label htmlFor="school" className="block text-sm font-medium text-foreground mb-1">School Name</label>
+                <input
+                  id="school"
+                  type="text"
+                  {...register('school')}
+                  placeholder="Name of your school"
+                  className="w-full px-4 py-3 rounded-lg border border-border bg-white text-foreground placeholder-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
+                />
+              </div>
             </div>
 
             {/* Subject */}
