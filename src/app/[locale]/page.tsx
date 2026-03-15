@@ -73,26 +73,42 @@ export default function Home() {
         <div className="absolute bottom-20 left-0 w-48 h-48 organic-blob-2 bg-purple-200/20 blur-2xl" aria-hidden="true" />
         <div className="absolute top-1/2 right-1/4 w-32 h-32 organic-blob bg-green-200/15 blur-xl" aria-hidden="true" />
         <div className="mx-auto max-w-7xl px-[var(--container-padding)] relative">
-          <div className="max-w-3xl">
-            <h1 className="text-4xl font-bold text-foreground sm:text-5xl lg:text-6xl font-serif">
-              Supporting NJ Schools and Students Through Grief and Loss
-            </h1>
-            <p className="mt-4 text-xl text-primary font-serif font-semibold">
-              New Jersey&apos;s Commitment to Becoming Grief-Informed
-            </p>
-            <p className="mt-6 text-lg text-muted-foreground sm:text-xl max-w-2xl">
-              In January 2024, New Jersey enacted P.L.2023, c.201 — requiring grief and loss education to be included in Health and Physical Education instruction for students in grades 8–12. The NJ Grief Collaborative is here to help schools, educators, families, and communities implement this mandate with confidence, compassion, and clarity.
-            </p>
-            <div className="mt-10 flex flex-col sm:flex-row gap-4">
-              <Link href="/mandate">
-                <Button size="lg">Learn About the Mandate</Button>
-              </Link>
-              <Link href="/resources">
-                <Button variant="outline" size="lg">Resources for Schools</Button>
-              </Link>
-              <Link href="/get-involved">
-                <Button variant="outline" size="lg">Get Involved</Button>
-              </Link>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <h1 className="text-4xl font-bold text-foreground sm:text-5xl lg:text-6xl font-serif">
+                Supporting NJ Schools and Students Through Grief and Loss
+              </h1>
+              <p className="mt-4 text-xl text-primary font-serif font-semibold">
+                New Jersey&apos;s Commitment to Becoming Grief-Informed
+              </p>
+              <p className="mt-6 text-lg text-muted-foreground sm:text-xl max-w-2xl">
+                In January 2024, New Jersey enacted P.L.2023, c.201 — requiring grief and loss education to be included in Health and Physical Education instruction for students in grades 8–12. The NJ Grief Collaborative is here to help schools, educators, families, and communities implement this mandate with confidence, compassion, and clarity.
+              </p>
+              <div className="mt-10 flex flex-col sm:flex-row gap-4">
+                <Link href="/mandate">
+                  <Button size="lg">Learn About the Mandate</Button>
+                </Link>
+                <Link href="/resources">
+                  <Button variant="outline" size="lg">Resources for Schools</Button>
+                </Link>
+                <Link href="/get-involved">
+                  <Button variant="outline" size="lg">Get Involved</Button>
+                </Link>
+              </div>
+            </div>
+            <div className="hidden lg:block relative">
+              <div className="rounded-2xl overflow-hidden shadow-2xl border-4 border-white/80">
+                <Image
+                  src="/images/hero-kids.png"
+                  alt="Smiling children supported by grief education programs"
+                  width={600}
+                  height={400}
+                  className="w-full h-auto object-cover"
+                  priority
+                />
+              </div>
+              <div className="absolute -bottom-4 -left-4 w-24 h-24 organic-blob bg-purple-300/30 blur-lg" aria-hidden="true" />
+              <div className="absolute -top-4 -right-4 w-20 h-20 organic-blob-2 bg-green-300/30 blur-lg" aria-hidden="true" />
             </div>
           </div>
         </div>
@@ -195,6 +211,15 @@ export default function Home() {
       {/* What Grief-Informed Schools Look Like */}
       <Section background="muted">
         <SectionHeader title="What Grief-Informed Schools Look Like" />
+        <div className="mb-10 rounded-2xl overflow-hidden shadow-lg max-w-3xl mx-auto">
+          <Image
+            src="/images/support-training.png"
+            alt="Grief-informed training and support for families"
+            width={800}
+            height={450}
+            className="w-full h-64 sm:h-80 object-cover"
+          />
+        </div>
         <div className="max-w-3xl mx-auto">
           <p className="text-muted-foreground mb-6 text-center">A grief-informed school:</p>
           <ul className="space-y-3 mb-8">

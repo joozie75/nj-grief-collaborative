@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import { useTranslations } from 'next-intl';
 import { Link } from '@/i18n/navigation';
 import Section, { SectionHeader } from '@/components/ui/Section';
@@ -55,6 +56,19 @@ export default function GriefInformedSchoolsPage() {
           </p>
         </div>
       </section>
+
+      {/* Hero Image */}
+      <div className="max-w-5xl mx-auto px-[var(--container-padding)] -mt-8 mb-8">
+        <div className="rounded-2xl overflow-hidden shadow-xl">
+          <Image
+            src="/images/hero-kids.png"
+            alt="Children supported by grief-informed school programs"
+            width={1000}
+            height={400}
+            className="w-full h-48 sm:h-72 object-cover"
+          />
+        </div>
+      </div>
 
       {/* What a Grief-Informed School Looks Like */}
       <Section narrow>

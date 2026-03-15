@@ -92,8 +92,30 @@ export default function AboutPage() {
         </div>
       </Section>
 
-      {/* Why We Came Together */}
+      {/* Community Image */}
       <Section background="muted">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center mb-12">
+          <div className="rounded-2xl overflow-hidden shadow-lg">
+            <Image
+              src="/images/community-families.png"
+              alt="Families and children in our community programs"
+              width={600}
+              height={400}
+              className="w-full h-64 sm:h-80 object-cover"
+            />
+          </div>
+          <div className="rounded-2xl overflow-hidden shadow-lg">
+            <Image
+              src="/images/impact-stats.png"
+              alt="Our impact in supporting grieving families"
+              width={600}
+              height={400}
+              className="w-full h-64 sm:h-80 object-cover"
+            />
+          </div>
+        </div>
+
+        {/* Why We Came Together */}
         <SectionHeader title="Why We Came Together" centered={false} />
         <ul className="space-y-4 max-w-3xl">
           {whyPoints.map((point) => (
