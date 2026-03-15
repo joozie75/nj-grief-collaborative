@@ -137,8 +137,17 @@ export default function AboutPage() {
         </ul>
       </Section>
 
-      {/* Coalition Members */}
+      {/* Partners & Supporters */}
       <Section>
+        <SectionHeader title="Partners & Supporters" subtitle="We are grateful for the support of schools, nonprofits, and professional organizations who share our commitment to grief-informed education." />
+        <div className="text-center text-muted-foreground">
+          <p className="text-lg mb-4">Our work is made possible through partnerships with organizations across New Jersey and beyond.</p>
+          <p className="text-sm italic">Sponsored by the New York Life Foundation</p>
+        </div>
+      </Section>
+
+      {/* Coalition Members */}
+      <Section background="muted">
         <SectionHeader title="Coalition Members" />
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {members.map((member) => (

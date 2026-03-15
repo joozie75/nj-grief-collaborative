@@ -108,7 +108,7 @@ export default function GriefInformedSchoolsPage() {
       <section className="bg-gradient-to-r from-primary to-teal-700 py-16">
         <div className="mx-auto max-w-7xl px-[var(--container-padding)] text-center">
           <h2 className="text-3xl font-bold text-white font-serif">How the NJ Grief Collaborative Can Help</h2>
-          <div className="mt-8 flex flex-col sm:flex-row justify-center gap-4">
+          <div className="mt-8 flex flex-wrap justify-center gap-4">
             <Link href="/training">
               <Button variant="accent">Professional Training</Button>
             </Link>
@@ -117,6 +117,9 @@ export default function GriefInformedSchoolsPage() {
             </Link>
             <Link href="/resources">
               <Button variant="accent">Curriculum Partners</Button>
+            </Link>
+            <Link href="/contact">
+              <Button variant="accent">Presenter Directory</Button>
             </Link>
           </div>
         </div>

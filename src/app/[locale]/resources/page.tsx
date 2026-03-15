@@ -172,6 +172,39 @@ export default function ResourcesPage() {
         </div>
       </section>
 
+      {/* Audience Sections */}
+      <Section background="muted">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {/* For Families & Caregivers */}
+          <div className="bg-white rounded-xl p-6 border border-border">
+            <h3 className="text-lg font-bold font-serif text-foreground mb-4">For Families & Caregivers</h3>
+            <ul className="space-y-2 text-sm text-muted-foreground">
+              <li>How to support children who are grieving</li>
+              <li>Accessing grief support for yourself or someone you know</li>
+            </ul>
+          </div>
+
+          {/* For Students */}
+          <div className="bg-white rounded-xl p-6 border border-border">
+            <h3 className="text-lg font-bold font-serif text-foreground mb-4">For Students</h3>
+            <ul className="space-y-2 text-sm text-muted-foreground">
+              <li>Age-appropriate grief resources</li>
+              <li className="font-medium text-foreground">Someone in My Life Died</li>
+              <li className="font-medium text-foreground">Grief Sucks</li>
+            </ul>
+          </div>
+
+          {/* Downloadable Materials */}
+          <div className="bg-white rounded-xl p-6 border border-border">
+            <h3 className="text-lg font-bold font-serif text-foreground mb-4">Downloadable Materials</h3>
+            <ul className="space-y-2 text-sm text-muted-foreground">
+              <li>Becoming Grief-Informed guides</li>
+              <li>Fact sheets, one-pagers, and toolkits</li>
+            </ul>
+          </div>
+        </div>
+      </Section>
+
       <Section>
         {/* Filters */}
         <div className="mb-8 space-y-4">

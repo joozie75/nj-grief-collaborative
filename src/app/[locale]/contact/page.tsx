@@ -72,7 +72,34 @@ export default function ContactPage() {
         </div>
       </section>
 
-      <Section narrow>
+      {/* Inquiry Types */}
+      <Section>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+          <div className="text-center p-6 bg-white rounded-xl border border-border">
+            <svg className="w-8 h-8 text-primary mx-auto mb-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+            </svg>
+            <h3 className="font-bold text-foreground font-serif">General Inquiries</h3>
+            <p className="mt-2 text-sm text-muted-foreground">Questions about grief education, the mandate, or our coalition.</p>
+          </div>
+          <div className="text-center p-6 bg-white rounded-xl border border-border">
+            <svg className="w-8 h-8 text-primary mx-auto mb-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2" />
+            </svg>
+            <h3 className="font-bold text-foreground font-serif">Media Inquiries</h3>
+            <p className="mt-2 text-sm text-muted-foreground">Press, interviews, and media coverage requests.</p>
+          </div>
+          <div className="text-center p-6 bg-white rounded-xl border border-border">
+            <svg className="w-8 h-8 text-primary mx-auto mb-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
+            </svg>
+            <h3 className="font-bold text-foreground font-serif">Partnership Inquiries</h3>
+            <p className="mt-2 text-sm text-muted-foreground">Collaborate with us as a school, district, or organization.</p>
+          </div>
+        </div>
+      </Section>
+
+      <Section narrow background="muted">
         {status === 'success' ? (
           <div className="text-center py-12">
             <div className="w-16 h-16 rounded-full bg-teal-100 flex items-center justify-center mx-auto mb-4">

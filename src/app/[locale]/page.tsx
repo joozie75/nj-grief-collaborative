@@ -38,6 +38,29 @@ const coalitionMembers = [
   },
 ];
 
+const voicesQuotes = [
+  {
+    quote: 'This is one of the best things I\'ve done in my life. I feel less alone and more connected to everyone in the school.',
+    role: 'Student',
+  },
+  {
+    quote: 'I really enjoyed everything about the presentation. I am excited to learn and teach the lesson to my students in the future.',
+    role: 'Educator',
+  },
+  {
+    quote: 'An incredible refuge for comfort, support, and sense of belonging for my family during the hardest time in our life. Thank you for everything you do!',
+    role: 'Parent',
+  },
+];
+
+const griefInformedTraits = [
+  'Recognizes that loss impacts learning and creates systems that support students throughout their school experience',
+  'Prepares educators with professional development to support students and colleagues',
+  'Integrates grief education into the school day thoughtfully',
+  'Creates space for questions without requiring disclosure',
+  'Provides pathways to additional support when needed',
+];
+
 export default function Home() {
   const t = useTranslations('home');
 
@@ -50,6 +73,9 @@ export default function Home() {
             <h1 className="text-4xl font-bold text-foreground sm:text-5xl lg:text-6xl font-serif">
               Supporting NJ Schools and Students Through Grief and Loss
             </h1>
+            <p className="mt-4 text-xl text-primary font-serif font-semibold">
+              New Jersey&apos;s Commitment to Becoming Grief-Informed
+            </p>
             <p className="mt-6 text-lg text-muted-foreground sm:text-xl max-w-2xl">
               In January 2024, New Jersey enacted P.L.2023, c.201 — requiring grief and loss education to be included in Health and Physical Education instruction for students in grades 8–12. The NJ Grief Collaborative is here to help schools, educators, families, and communities implement this mandate with confidence, compassion, and clarity.
             </p>
@@ -70,7 +96,7 @@ export default function Home() {
 
       {/* Why This Matters */}
       <Section>
-        <SectionHeader title="Why This Matters" />
+        <SectionHeader title="Why This Matters" subtitle="Grief Is Not Rare" />
         <div className="max-w-3xl mx-auto space-y-6">
           <div className="text-center">
             <p className="text-5xl font-bold font-serif text-primary">1 in 13</p>
@@ -154,6 +180,60 @@ export default function Home() {
               </CardBody>
             </Card>
           ))}
+        </div>
+        <p className="mt-8 text-center text-muted-foreground text-lg max-w-3xl mx-auto">
+          Our organizations collaborate on training, materials, consultation, and community response to ensure schools feel supported — not overwhelmed.
+        </p>
+      </Section>
+
+      {/* What Grief-Informed Schools Look Like */}
+      <Section background="muted">
+        <SectionHeader title="What Grief-Informed Schools Look Like" />
+        <div className="max-w-3xl mx-auto">
+          <p className="text-muted-foreground mb-6 text-center">A grief-informed school:</p>
+          <ul className="space-y-3 mb-8">
+            {griefInformedTraits.map((trait) => (
+              <li key={trait} className="flex items-start gap-3">
+                <svg className="w-5 h-5 text-primary shrink-0 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                </svg>
+                <span className="text-muted-foreground">{trait}</span>
+              </li>
+            ))}
+          </ul>
+          <p className="text-muted-foreground text-lg leading-relaxed italic text-center">
+            When grief is addressed proactively, it can help grieving students become more equipped to concentrate, and in turn, be more prepared for learning.
+          </p>
+          <div className="mt-8 text-center">
+            <Link href="/grief-informed-schools">
+              <Button variant="outline">Learn More</Button>
+            </Link>
+          </div>
+        </div>
+      </Section>
+
+      {/* Voices / Human Impact */}
+      <Section>
+        <SectionHeader title="Voices / Human Impact" subtitle="Short reflections from students, educators, and caregivers." />
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          {voicesQuotes.map((item, i) => (
+            <Card key={i}>
+              <CardBody>
+                <svg className="w-8 h-8 text-primary/30 mb-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10H14.017zM0 21v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151C7.563 6.068 6 8.789 6 11h4v10H0z" />
+                </svg>
+                <blockquote className="text-foreground leading-relaxed">
+                  &ldquo;{item.quote}&rdquo;
+                </blockquote>
+                <p className="mt-4 text-sm text-primary font-medium">&mdash; {item.role}</p>
+              </CardBody>
+            </Card>
+          ))}
+        </div>
+        <div className="mt-8 text-center">
+          <Link href="/testimonials">
+            <Button variant="outline">Read More Testimonials</Button>
+          </Link>
         </div>
       </Section>
 
