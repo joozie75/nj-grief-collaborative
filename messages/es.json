@@ -1,0 +1,215 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "about": "Acerca de",
+    "mandate": "El Mandato",
+    "griefInformedSchools": "Escuelas Informadas sobre el Duelo",
+    "resources": "Recursos",
+    "events": "Eventos",
+    "training": "Capacitación",
+    "getInvolved": "Participa",
+    "contact": "Contacto",
+    "testimonials": "Testimonios"
+  },
+  "common": {
+    "learnMore": "Más Información",
+    "register": "Registrarse",
+    "download": "Descargar",
+    "viewAll": "Ver Todo",
+    "search": "Buscar",
+    "filter": "Filtrar",
+    "clear": "Limpiar",
+    "submit": "Enviar",
+    "loading": "Cargando...",
+    "noResults": "No se encontraron resultados",
+    "readMore": "Leer Más",
+    "back": "Atrás",
+    "next": "Siguiente",
+    "previous": "Anterior",
+    "close": "Cerrar",
+    "openMenu": "Abrir menú",
+    "closeMenu": "Cerrar menú",
+    "switchLanguage": "English",
+    "skipToContent": "Ir al contenido principal"
+  },
+  "home": {
+    "heroTitle": "Apoyando a Estudiantes en Duelo en Todo Nueva Jersey",
+    "heroSubtitle": "Una coalición de cuatro centros de duelo familiar trabajando juntos para llevar la educación sobre el duelo a cada escuela del estado.",
+    "heroCta": "Explorar Recursos",
+    "heroSecondaryCta": "Conocer el Mandato",
+    "statNumber": "1 de 13",
+    "statDescription": "niños en edad escolar en EE.UU. experimentarán la muerte de un padre o hermano antes de los 18 años",
+    "mandateTitle": "Mandato de Educación sobre el Duelo de Nueva Jersey",
+    "mandateDescription": "P.L.2023, c.201 requiere que todas las escuelas públicas de Nueva Jersey proporcionen educación sobre el duelo apropiada para la edad. Estamos aquí para ayudar a las escuelas a cumplir este mandato con compasión y experiencia.",
+    "coalitionTitle": "Cuatro Centros, Una Misión",
+    "coalitionDescription": "El NJ Grief Collaborative reúne a cuatro centros líderes de duelo familiar para apoyar a escuelas, familias y estudiantes en todo el estado.",
+    "testimonialsTitle": "Voces de Nuestra Comunidad",
+    "testimonialsDescription": "Escuche a educadores, padres y estudiantes sobre el impacto de la educación sobre el duelo.",
+    "ctaTitle": "¿Listo para Comenzar?",
+    "ctaDescription": "Ya sea que sea un profesional escolar, padre o estudiante, tenemos recursos para apoyarlo.",
+    "ctaButton": "Encontrar Recursos"
+  },
+  "about": {
+    "title": "Acerca del NJ Grief Collaborative",
+    "subtitle": "Cuatro centros de duelo familiar unidos por una misión compartida.",
+    "missionTitle": "Nuestra Misión",
+    "missionText": "Asegurar que cada estudiante en Nueva Jersey tenga acceso a educación y apoyo sobre el duelo compasivo y basado en evidencia.",
+    "visionTitle": "Nuestra Visión",
+    "visionText": "Un Nueva Jersey donde ningún estudiante sufra el duelo solo y cada escuela esté equipada para apoyar a los jóvenes en duelo.",
+    "whyTitle": "Por Qué Nos Unimos",
+    "whyText": "Cuando Nueva Jersey aprobó P.L.2023, c.201, cuatro centros de duelo familiar reconocieron la oportunidad de combinar décadas de experiencia para apoyar a las escuelas en todo el estado. Juntos, aportamos diversas perspectivas y profundas raíces comunitarias a este importante trabajo.",
+    "membersTitle": "Nuestros Miembros de la Coalición"
+  },
+  "mandate": {
+    "title": "Entendiendo el Mandato",
+    "subtitle": "Todo lo que necesita saber sobre P.L.2023, c.201",
+    "whatTitle": "¿Qué es P.L.2023, c.201?",
+    "whatText": "Firmada como ley en 2024, esta legislación histórica requiere que todas las escuelas públicas de Nueva Jersey proporcionen educación sobre el duelo apropiada para la edad. Reconoce que el duelo es una experiencia universal y que las escuelas juegan un papel crítico en el apoyo a los jóvenes en duelo.",
+    "whoTitle": "¿A Quién Afecta?",
+    "whoItems": {
+      "schools": "Todos los distritos de escuelas públicas de Nueva Jersey",
+      "educators": "Maestros, consejeros y administradores escolares",
+      "students": "Estudiantes de grados K-12",
+      "parents": "Padres y tutores de niños en edad escolar"
+    },
+    "isTitle": "Lo Que el Mandato ES",
+    "isItems": {
+      "education": "Educación sobre el duelo apropiada para la edad integrada en el currículo existente",
+      "support": "Un marco para apoyar a los estudiantes en duelo",
+      "training": "Desarrollo profesional para el personal escolar",
+      "awareness": "Un mandato de concienciación y preparación"
+    },
+    "isNotTitle": "Lo Que el Mandato NO ES",
+    "isNotItems": {
+      "therapy": "Un reemplazo para la terapia o consejería de duelo",
+      "burden": "Una carga sin fondos para las escuelas",
+      "oneSize": "Un currículo único para todos",
+      "diagnostic": "Una herramienta para diagnosticar condiciones de salud mental"
+    },
+    "faqTitle": "Preguntas Frecuentes"
+  },
+  "griefInformedSchools": {
+    "title": "Escuelas Informadas sobre el Duelo",
+    "subtitle": "¿Qué significa ser una escuela informada sobre el duelo?",
+    "introText": "Una escuela informada sobre el duelo reconoce que el duelo impacta el aprendizaje y el comportamiento, y crea un ambiente donde los estudiantes en duelo se sienten vistos, apoyados y seguros.",
+    "whatTitle": "Cómo Son las Escuelas Informadas sobre el Duelo",
+    "benefitsTitle": "Beneficios de Ser Informado sobre el Duelo",
+    "gradeBandsTitle": "Enfoques por Nivel Escolar",
+    "elementary": "Primaria (K-5)",
+    "elementaryText": "Lecciones apropiadas para la edad sobre sentimientos, pérdida y estrategias saludables de afrontamiento. Enfoque en normalizar el duelo como parte de la vida.",
+    "middle": "Escuela Intermedia (6-8)",
+    "middleText": "Exploración más profunda del duelo, identidad y apoyo entre pares. Construyendo alfabetización emocional y resiliencia.",
+    "high": "Escuela Secundaria (9-12)",
+    "highText": "Discusiones avanzadas sobre el duelo, la mortalidad y el apoyo a otros. Oportunidades de liderazgo en apoyo entre pares."
+  },
+  "resources": {
+    "title": "Biblioteca de Recursos",
+    "subtitle": "Herramientas y materiales para profesionales escolares, padres y estudiantes.",
+    "filterAudience": "Audiencia",
+    "filterFormat": "Formato",
+    "audiences": {
+      "schoolProfessionals": "Profesionales Escolares",
+      "parents": "Padres",
+      "students": "Estudiantes"
+    },
+    "formats": {
+      "guide": "Guía",
+      "video": "Video",
+      "worksheet": "Hoja de Trabajo",
+      "presentation": "Presentación",
+      "article": "Artículo",
+      "toolkit": "Kit de Herramientas"
+    },
+    "searchPlaceholder": "Buscar recursos..."
+  },
+  "events": {
+    "title": "Eventos y Seminarios Web",
+    "subtitle": "Únase a nosotros para próximas capacitaciones, talleres y eventos comunitarios.",
+    "upcoming": "Próximos Eventos",
+    "past": "Eventos Pasados",
+    "virtual": "Virtual",
+    "inPerson": "Presencial",
+    "free": "Gratis",
+    "registerNow": "Registrarse Ahora",
+    "addToCalendar": "Agregar al Calendario",
+    "noUpcoming": "No hay eventos próximos en este momento. ¡Vuelva pronto!",
+    "details": "Detalles del Evento",
+    "when": "Cuándo",
+    "where": "Dónde",
+    "cost": "Costo",
+    "host": "Organizado por",
+    "category": "Categoría"
+  },
+  "training": {
+    "title": "Desarrollo Profesional",
+    "subtitle": "Construyendo capacidad para escuelas informadas sobre el duelo en todo Nueva Jersey.",
+    "introText": "Nuestra coalición ofrece una variedad de oportunidades de desarrollo profesional diseñadas para equipar a los profesionales escolares con el conocimiento y las habilidades para apoyar a los estudiantes en duelo.",
+    "programsTitle": "Nuestros Programas",
+    "whoTitle": "Quién Debe Asistir",
+    "formatTitle": "Formatos de Capacitación",
+    "requestTitle": "Solicitar Capacitación",
+    "requestText": "¿Interesado en llevar la capacitación sobre educación del duelo a su escuela o distrito? Contáctenos para discutir sus necesidades."
+  },
+  "getInvolved": {
+    "title": "Participa",
+    "subtitle": "Únase a nosotros para apoyar a los estudiantes en duelo en todo Nueva Jersey.",
+    "waysTitle": "Formas de Apoyar",
+    "surveyTitle": "Comparta Su Voz",
+    "surveyText": "Ayúdenos a entender sus necesidades y experiencias con la educación sobre el duelo en las escuelas.",
+    "legislatorTitle": "Contacte a Su Legislador",
+    "legislatorText": "Abogue por el apoyo continuo a la educación sobre el duelo en las escuelas de Nueva Jersey."
+  },
+  "contact": {
+    "title": "Contáctenos",
+    "subtitle": "¿Tiene preguntas? Nos encantaría saber de usted.",
+    "nameLabel": "Nombre Completo",
+    "namePlaceholder": "Su nombre completo",
+    "emailLabel": "Correo Electrónico",
+    "emailPlaceholder": "su@correo.com",
+    "phoneLabel": "Número de Teléfono",
+    "phonePlaceholder": "(555) 555-5555",
+    "roleLabel": "Su Rol",
+    "rolePlaceholder": "Seleccione su rol",
+    "roles": {
+      "educator": "Educador / Maestro",
+      "counselor": "Consejero Escolar",
+      "administrator": "Administrador Escolar",
+      "parent": "Padre / Tutor",
+      "student": "Estudiante",
+      "other": "Otro"
+    },
+    "organizationLabel": "Organización / Escuela",
+    "organizationPlaceholder": "Su escuela u organización",
+    "subjectLabel": "Asunto",
+    "subjectPlaceholder": "¿De qué se trata?",
+    "messageLabel": "Mensaje",
+    "messagePlaceholder": "Cuéntenos cómo podemos ayudar...",
+    "centersLabel": "¿A qué centro(s) le gustaría contactar?",
+    "submitButton": "Enviar Mensaje",
+    "successMessage": "¡Gracias! Su mensaje ha sido enviado. Le responderemos dentro de 2 días hábiles.",
+    "errorMessage": "Algo salió mal. Por favor intente de nuevo o envíenos un correo directamente."
+  },
+  "testimonials": {
+    "title": "Testimonios",
+    "subtitle": "Escuche a las personas que nuestro trabajo ha tocado.",
+    "perspectives": {
+      "educator": "Educadores",
+      "parent": "Padres",
+      "student": "Estudiantes",
+      "counselor": "Consejeros",
+      "all": "Todos"
+    }
+  },
+  "footer": {
+    "quickLinks": "Enlaces Rápidos",
+    "coalition": "Miembros de la Coalición",
+    "connect": "Conéctese Con Nosotros",
+    "newsletter": "Manténgase Actualizado",
+    "newsletterPlaceholder": "Ingrese su correo",
+    "newsletterButton": "Suscribirse",
+    "sponsor": "Patrocinado por",
+    "copyright": "© {year} NJ Grief Collaborative. Todos los derechos reservados.",
+    "privacy": "Política de Privacidad",
+    "accessibility": "Accesibilidad"
+  }
+}

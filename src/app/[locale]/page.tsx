@@ -1,0 +1,214 @@
+import Image from 'next/image';
+import { useTranslations } from 'next-intl';
+import { Link } from '@/i18n/navigation';
+import Section, { SectionHeader } from '@/components/ui/Section';
+import Button from '@/components/ui/Button';
+import Card, { CardBody } from '@/components/ui/Card';
+
+const coalitionMembers = [
+  {
+    name: 'Alcove',
+    description: 'A center for grieving children and families providing peer support groups and community education.',
+    location: 'Northfield, NJ',
+    logo: '/logos/alcove.png',
+  },
+  {
+    name: 'Common Ground Grief Center',
+    description: 'A grief center offering support groups and resources for children, teens, and families navigating loss.',
+    location: 'Manasquan, NJ',
+    logo: '/logos/common-ground.jpg',
+  },
+  {
+    name: 'Good Grief',
+    description: 'Supporting families after the death of a mother, father, brother, sister, or other significant person in their lives.',
+    location: 'Morristown, NJ',
+    logo: '/logos/good-grief.png',
+  },
+  {
+    name: 'Imagine, A Center for Coping with Loss',
+    description: 'Providing year-round grief support programs for children, teens, young adults, and their families.',
+    location: 'Newark & Mountainside, NJ',
+    logo: '/logos/imagine.svg',
+  },
+  {
+    name: "Stephy's Place",
+    description: 'Supporting children and families through grief with compassionate programs and community resources.',
+    location: 'New Jersey',
+    logo: '/logos/stephys-place.png',
+  },
+];
+
+export default function Home() {
+  const t = useTranslations('home');
+
+  return (
+    <>
+      {/* Hero */}
+      <section className="relative bg-gradient-to-br from-teal-50 via-white to-purple-50 py-20 sm:py-28 lg:py-36">
+        <div className="mx-auto max-w-7xl px-[var(--container-padding)]">
+          <div className="max-w-3xl">
+            <h1 className="text-4xl font-bold text-foreground sm:text-5xl lg:text-6xl font-serif">
+              Supporting NJ Schools and Students Through Grief and Loss
+            </h1>
+            <p className="mt-6 text-lg text-muted-foreground sm:text-xl max-w-2xl">
+              In January 2024, New Jersey enacted P.L.2023, c.201 — requiring grief and loss education to be included in Health and Physical Education instruction for students in grades 8–12. The NJ Grief Collaborative is here to help schools, educators, families, and communities implement this mandate with confidence, compassion, and clarity.
+            </p>
+            <div className="mt-10 flex flex-col sm:flex-row gap-4">
+              <Link href="/mandate">
+                <Button size="lg">Learn About the Mandate</Button>
+              </Link>
+              <Link href="/resources">
+                <Button variant="outline" size="lg">Resources for Schools</Button>
+              </Link>
+              <Link href="/get-involved">
+                <Button variant="ghost" size="lg">Get Involved</Button>
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Why This Matters */}
+      <Section>
+        <SectionHeader title="Why This Matters" />
+        <div className="max-w-3xl mx-auto space-y-6">
+          <div className="text-center">
+            <p className="text-5xl font-bold font-serif text-primary">1 in 13</p>
+            <p className="mt-3 text-lg text-muted-foreground">
+              children in New Jersey will experience the death of a parent or sibling by the time they reach 18 years of age.
+            </p>
+          </div>
+          <p className="text-muted-foreground text-lg leading-relaxed text-center">
+            Many more experience other significant losses such as divorce, incarceration, illness, community violence, displacement, natural disasters or identity-based loss.
+          </p>
+          <p className="text-muted-foreground text-lg leading-relaxed text-center font-medium">
+            Grief does not stay at home. It shows up in classrooms, hallways, attendance records, behaviors, and academic performance.
+          </p>
+          <p className="text-muted-foreground text-lg leading-relaxed text-center">
+            When we equip students with knowledge, proper language, coping tools, and trusted adults, we strengthen not only individual resilience — but entire school communities.
+          </p>
+        </div>
+      </Section>
+
+      {/* About the Mandate */}
+      <Section background="muted">
+        <div className="max-w-3xl mx-auto text-center">
+          <SectionHeader
+            title="About the Mandate"
+            subtitle="P.L.2023, c.201 requires that grief and loss education be included within New Jersey's Health and Physical Education standards for grades 8–12."
+          />
+          <ul className="text-left space-y-3 max-w-xl mx-auto mb-8">
+            {[
+              'Normalizes grief as a human experience',
+              'Provides students with developmentally appropriate coping tools',
+              'Expands the conversation to include many forms of loss',
+              'Encourages schools to become grief-informed',
+            ].map((item) => (
+              <li key={item} className="flex items-start gap-3">
+                <svg className="w-5 h-5 text-primary shrink-0 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                </svg>
+                <span className="text-muted-foreground">{item}</span>
+              </li>
+            ))}
+          </ul>
+          <p className="text-sm text-muted-foreground mb-8">
+            This mandate does not require personal disclosure, therapy, or teachers to become counselors. It ensures students receive education that prepares them for real life.
+          </p>
+          <Link href="/mandate">
+            <Button variant="outline">Learn More About the Mandate</Button>
+          </Link>
+        </div>
+      </Section>
+
+      {/* Who We Are — Coalition Members */}
+      <Section>
+        <SectionHeader
+          title="The NJ Grief Collaborative"
+          subtitle="We are a coalition of New Jersey's leading family bereavement centers. Together, we support schools and communities in implementing grief education in ways that are developmentally appropriate, trauma-informed, and grounded in best practice."
+        />
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          {coalitionMembers.map((member) => (
+            <Card key={member.name}>
+              <CardBody>
+                <div className="w-16 h-16 flex items-center justify-center mb-4">
+                  {member.logo ? (
+                    <Image
+                      src={member.logo}
+                      alt={`${member.name} logo`}
+                      width={64}
+                      height={64}
+                      className="object-contain w-16 h-16"
+                    />
+                  ) : (
+                    <div className="w-14 h-14 rounded-full bg-primary-light flex items-center justify-center">
+                      <span className="text-primary font-bold text-xl font-serif">
+                        {member.name.charAt(0)}
+                      </span>
+                    </div>
+                  )}
+                </div>
+                <h3 className="text-lg font-bold font-serif text-foreground">{member.name}</h3>
+                <p className="mt-2 text-sm text-muted-foreground">{member.description}</p>
+                <p className="mt-3 text-xs text-primary font-medium">{member.location}</p>
+              </CardBody>
+            </Card>
+          ))}
+        </div>
+      </Section>
+
+      {/* Ready to Take the Next Step — 3 audience CTA */}
+      <section className="bg-gradient-to-r from-primary to-teal-700 py-20">
+        <div className="mx-auto max-w-7xl px-[var(--container-padding)]">
+          <h2 className="text-3xl font-bold text-white sm:text-4xl font-serif text-center">
+            Ready to Take the Next Step?
+          </h2>
+          <p className="mt-4 text-lg text-teal-100 max-w-2xl mx-auto text-center">
+            Whether you are a school leader, educator, policymaker, or caregiver, we are here to help.
+          </p>
+
+          <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
+            {/* For Schools & Educators */}
+            <div className="bg-white/10 backdrop-blur-sm rounded-xl p-8 text-center">
+              <h3 className="text-xl font-bold text-white font-serif">For Schools & Educators</h3>
+              <p className="mt-3 text-teal-100 text-sm">
+                Professional development, curriculum partners, and implementation guidance.
+              </p>
+              <div className="mt-6">
+                <Link href="/resources">
+                  <Button variant="accent">Explore Resources</Button>
+                </Link>
+              </div>
+            </div>
+
+            {/* For Families */}
+            <div className="bg-white/10 backdrop-blur-sm rounded-xl p-8 text-center">
+              <h3 className="text-xl font-bold text-white font-serif">For Families</h3>
+              <p className="mt-3 text-teal-100 text-sm">
+                Resources to support children and teens who are grieving.
+              </p>
+              <div className="mt-6">
+                <Link href="/contact">
+                  <Button variant="accent">Request Support</Button>
+                </Link>
+              </div>
+            </div>
+
+            {/* For Legislators & Community Leaders */}
+            <div className="bg-white/10 backdrop-blur-sm rounded-xl p-8 text-center">
+              <h3 className="text-xl font-bold text-white font-serif">For Legislators & Community Leaders</h3>
+              <p className="mt-3 text-teal-100 text-sm">
+                Evidence-based insight into why grief education strengthens schools.
+              </p>
+              <div className="mt-6">
+                <Link href="/get-involved">
+                  <Button variant="accent">Join the Collaborative</Button>
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </>
+  );
+}

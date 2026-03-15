@@ -1,0 +1,215 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "mandate": "The Mandate",
+    "griefInformedSchools": "Grief-Informed Schools",
+    "resources": "Resources",
+    "events": "Events",
+    "training": "Training",
+    "getInvolved": "Get Involved",
+    "contact": "Contact",
+    "testimonials": "Testimonials"
+  },
+  "common": {
+    "learnMore": "Learn More",
+    "register": "Register",
+    "download": "Download",
+    "viewAll": "View All",
+    "search": "Search",
+    "filter": "Filter",
+    "clear": "Clear",
+    "submit": "Submit",
+    "loading": "Loading...",
+    "noResults": "No results found",
+    "readMore": "Read More",
+    "back": "Back",
+    "next": "Next",
+    "previous": "Previous",
+    "close": "Close",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "switchLanguage": "Español",
+    "skipToContent": "Skip to main content"
+  },
+  "home": {
+    "heroTitle": "Supporting Grieving Students Across New Jersey",
+    "heroSubtitle": "A coalition of four family bereavement centers working together to bring grief education to every school in the state.",
+    "heroCta": "Explore Resources",
+    "heroSecondaryCta": "Learn About the Mandate",
+    "statNumber": "1 in 13",
+    "statDescription": "school-aged children in the U.S. will experience the death of a parent or sibling before age 18",
+    "mandateTitle": "New Jersey's Grief Education Mandate",
+    "mandateDescription": "P.L.2023, c.201 requires all New Jersey public schools to provide age-appropriate grief education. We're here to help schools meet this mandate with compassion and expertise.",
+    "coalitionTitle": "Four Centers, One Mission",
+    "coalitionDescription": "The NJ Grief Collaborative brings together four leading family bereavement centers to support schools, families, and students across the state.",
+    "testimonialsTitle": "Voices from Our Community",
+    "testimonialsDescription": "Hear from educators, parents, and students about the impact of grief education.",
+    "ctaTitle": "Ready to Get Started?",
+    "ctaDescription": "Whether you're a school professional, parent, or student, we have resources to support you.",
+    "ctaButton": "Find Resources"
+  },
+  "about": {
+    "title": "About the NJ Grief Collaborative",
+    "subtitle": "Four family bereavement centers united by a shared mission.",
+    "missionTitle": "Our Mission",
+    "missionText": "To ensure every student in New Jersey has access to compassionate, evidence-based grief education and support.",
+    "visionTitle": "Our Vision",
+    "visionText": "A New Jersey where no student grieves alone and every school is equipped to support bereaved youth.",
+    "whyTitle": "Why We Came Together",
+    "whyText": "When New Jersey passed P.L.2023, c.201, four family bereavement centers recognized an opportunity to combine decades of expertise to support schools statewide. Together, we bring diverse perspectives and deep community roots to this important work.",
+    "membersTitle": "Our Coalition Members"
+  },
+  "mandate": {
+    "title": "Understanding the Mandate",
+    "subtitle": "Everything you need to know about P.L.2023, c.201",
+    "whatTitle": "What is P.L.2023, c.201?",
+    "whatText": "Signed into law in 2024, this landmark legislation requires all New Jersey public schools to provide age-appropriate grief education to students. It recognizes that grief is a universal experience and that schools play a critical role in supporting bereaved youth.",
+    "whoTitle": "Who Does It Impact?",
+    "whoItems": {
+      "schools": "All New Jersey public school districts",
+      "educators": "Teachers, counselors, and school administrators",
+      "students": "Students in grades K-12",
+      "parents": "Parents and guardians of school-aged children"
+    },
+    "isTitle": "What the Mandate IS",
+    "isItems": {
+      "education": "Age-appropriate grief education integrated into existing curriculum",
+      "support": "A framework for supporting bereaved students",
+      "training": "Professional development for school staff",
+      "awareness": "A mandate for awareness and preparedness"
+    },
+    "isNotTitle": "What the Mandate IS NOT",
+    "isNotItems": {
+      "therapy": "A replacement for grief therapy or counseling",
+      "burden": "An unfunded burden on schools",
+      "oneSize": "A one-size-fits-all curriculum",
+      "diagnostic": "A tool for diagnosing mental health conditions"
+    },
+    "faqTitle": "Frequently Asked Questions"
+  },
+  "griefInformedSchools": {
+    "title": "Grief-Informed Schools",
+    "subtitle": "What does it mean to be a grief-informed school?",
+    "introText": "A grief-informed school recognizes that grief impacts learning and behavior, and creates an environment where bereaved students feel seen, supported, and safe.",
+    "whatTitle": "What Grief-Informed Schools Look Like",
+    "benefitsTitle": "Benefits of Being Grief-Informed",
+    "gradeBandsTitle": "Grade Band Approaches",
+    "elementary": "Elementary (K-5)",
+    "elementaryText": "Age-appropriate lessons about feelings, loss, and healthy coping. Focus on normalizing grief as part of life.",
+    "middle": "Middle School (6-8)",
+    "middleText": "Deeper exploration of grief, identity, and peer support. Building emotional literacy and resilience.",
+    "high": "High School (9-12)",
+    "highText": "Advanced discussions about grief, mortality, and supporting others. Leadership opportunities in peer support."
+  },
+  "resources": {
+    "title": "Resource Library",
+    "subtitle": "Tools and materials for school professionals, parents, and students.",
+    "filterAudience": "Audience",
+    "filterFormat": "Format",
+    "audiences": {
+      "schoolProfessionals": "School Professionals",
+      "parents": "Parents",
+      "students": "Students"
+    },
+    "formats": {
+      "guide": "Guide",
+      "video": "Video",
+      "worksheet": "Worksheet",
+      "presentation": "Presentation",
+      "article": "Article",
+      "toolkit": "Toolkit"
+    },
+    "searchPlaceholder": "Search resources..."
+  },
+  "events": {
+    "title": "Events & Webinars",
+    "subtitle": "Join us for upcoming trainings, workshops, and community events.",
+    "upcoming": "Upcoming Events",
+    "past": "Past Events",
+    "virtual": "Virtual",
+    "inPerson": "In-Person",
+    "free": "Free",
+    "registerNow": "Register Now",
+    "addToCalendar": "Add to Calendar",
+    "noUpcoming": "No upcoming events at this time. Check back soon!",
+    "details": "Event Details",
+    "when": "When",
+    "where": "Where",
+    "cost": "Cost",
+    "host": "Hosted by",
+    "category": "Category"
+  },
+  "training": {
+    "title": "Professional Development",
+    "subtitle": "Building capacity for grief-informed schools across New Jersey.",
+    "introText": "Our coalition offers a range of professional development opportunities designed to equip school professionals with the knowledge and skills to support grieving students.",
+    "programsTitle": "Our Programs",
+    "whoTitle": "Who Should Attend",
+    "formatTitle": "Training Formats",
+    "requestTitle": "Request Training",
+    "requestText": "Interested in bringing grief education training to your school or district? Contact us to discuss your needs."
+  },
+  "getInvolved": {
+    "title": "Get Involved",
+    "subtitle": "Join us in supporting grieving students across New Jersey.",
+    "waysTitle": "Ways to Support",
+    "surveyTitle": "Share Your Voice",
+    "surveyText": "Help us understand your needs and experiences with grief education in schools.",
+    "legislatorTitle": "Contact Your Legislator",
+    "legislatorText": "Advocate for continued support of grief education in New Jersey schools."
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "Have questions? We'd love to hear from you.",
+    "nameLabel": "Full Name",
+    "namePlaceholder": "Your full name",
+    "emailLabel": "Email Address",
+    "emailPlaceholder": "your@email.com",
+    "phoneLabel": "Phone Number",
+    "phonePlaceholder": "(555) 555-5555",
+    "roleLabel": "Your Role",
+    "rolePlaceholder": "Select your role",
+    "roles": {
+      "educator": "Educator / Teacher",
+      "counselor": "School Counselor",
+      "administrator": "School Administrator",
+      "parent": "Parent / Guardian",
+      "student": "Student",
+      "other": "Other"
+    },
+    "organizationLabel": "Organization / School",
+    "organizationPlaceholder": "Your school or organization",
+    "subjectLabel": "Subject",
+    "subjectPlaceholder": "What is this regarding?",
+    "messageLabel": "Message",
+    "messagePlaceholder": "Tell us how we can help...",
+    "centersLabel": "Which center(s) would you like to reach?",
+    "submitButton": "Send Message",
+    "successMessage": "Thank you! Your message has been sent. We'll get back to you within 2 business days.",
+    "errorMessage": "Something went wrong. Please try again or email us directly."
+  },
+  "testimonials": {
+    "title": "Testimonials",
+    "subtitle": "Hear from the people our work has touched.",
+    "perspectives": {
+      "educator": "Educators",
+      "parent": "Parents",
+      "student": "Students",
+      "counselor": "Counselors",
+      "all": "All"
+    }
+  },
+  "footer": {
+    "quickLinks": "Quick Links",
+    "coalition": "Coalition Members",
+    "connect": "Connect With Us",
+    "newsletter": "Stay Updated",
+    "newsletterPlaceholder": "Enter your email",
+    "newsletterButton": "Subscribe",
+    "sponsor": "Sponsored by",
+    "copyright": "© {year} NJ Grief Collaborative. All rights reserved.",
+    "privacy": "Privacy Policy",
+    "accessibility": "Accessibility"
+  }
+}
