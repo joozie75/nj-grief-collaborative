@@ -48,25 +48,48 @@ export default function ContactPage() {
   const onSubmit = async (data: ContactFormData) => {
     setStatus('loading');
     try {
-      const formData = new URLSearchParams();
-      formData.append('form-name', 'contact');
-      formData.append('name', data.name);
-      formData.append('email', data.email);
-      formData.append('phone', data.phone || '');
-      formData.append('role', data.role);
-      formData.append('organization', data.organization || '');
-      formData.append('school', data.school || '');
-      formData.append('subject', data.subject);
-      formData.append('message', data.message);
-      formData.append('centers', data.centers.join(', '));
-      formData.append('bot-field', data.honeypot);
+      // Build a real form and submit it via a hidden iframe
+      // This is the most reliable way to submit to Netlify Forms from JS
+      const iframe = document.createElement('iframe');
+      iframe.name = 'netlify-form-frame';
+      iframe.style.display = 'none';
+      document.body.appendChild(iframe);
 
-      const res = await fetch('/form.html', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-        body: formData.toString(),
-      });
-      if (!res.ok) throw new Error();
+      const form = document.createElement('form');
+      form.method = 'POST';
+      form.action = '/form.html';
+      form.target = 'netlify-form-frame';
+
+      const fields: Record<string, string> = {
+        'form-name': 'contact',
+        'name': data.name,
+        'email': data.email,
+        'phone': data.phone || '',
+        'role': data.role,
+        'organization': data.organization || '',
+        'school': data.school || '',
+        'subject': data.subject,
+        'message': data.message,
+        'centers': data.centers.join(', '),
+      };
+
+      for (const [key, value] of Object.entries(fields)) {
+        const input = document.createElement('input');
+        input.type = 'hidden';
+        input.name = key;
+        input.value = value;
+        form.appendChild(input);
+      }
+
+      document.body.appendChild(form);
+      form.submit();
+
+      // Clean up after a short delay
+      setTimeout(() => {
+        document.body.removeChild(form);
+        document.body.removeChild(iframe);
+      }, 2000);
+
       setStatus('success');
       reset();
     } catch {
