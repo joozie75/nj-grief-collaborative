@@ -48,10 +48,23 @@ export default function ContactPage() {
   const onSubmit = async (data: ContactFormData) => {
     setStatus('loading');
     try {
-      const res = await fetch('/api/contact', {
+      const formData = new URLSearchParams();
+      formData.append('form-name', 'contact');
+      formData.append('name', data.name);
+      formData.append('email', data.email);
+      formData.append('phone', data.phone || '');
+      formData.append('role', data.role);
+      formData.append('organization', data.organization || '');
+      formData.append('school', data.school || '');
+      formData.append('subject', data.subject);
+      formData.append('message', data.message);
+      formData.append('centers', data.centers.join(', '));
+      formData.append('bot-field', data.honeypot);
+
+      const res = await fetch('/', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(data),
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: formData.toString(),
       });
       if (!res.ok) throw new Error();
       setStatus('success');
