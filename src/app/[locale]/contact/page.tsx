@@ -46,53 +46,41 @@ export default function ContactPage() {
   });
 
   const onSubmit = async (data: ContactFormData) => {
+    console.log('[Contact Form] Submit triggered with data:', data);
     setStatus('loading');
     try {
-      // Build a real form and submit it via a hidden iframe
-      // This is the most reliable way to submit to Netlify Forms from JS
-      const iframe = document.createElement('iframe');
-      iframe.name = 'netlify-form-frame';
-      iframe.style.display = 'none';
-      document.body.appendChild(iframe);
+      // Try fetch first and log the response
+      const formBody = new URLSearchParams();
+      formBody.append('form-name', 'contact');
+      formBody.append('name', data.name);
+      formBody.append('email', data.email);
+      formBody.append('phone', data.phone || '');
+      formBody.append('role', data.role);
+      formBody.append('organization', data.organization || '');
+      formBody.append('school', data.school || '');
+      formBody.append('subject', data.subject);
+      formBody.append('message', data.message);
+      formBody.append('centers', data.centers.join(', '));
 
-      const form = document.createElement('form');
-      form.method = 'POST';
-      form.action = '/form.html';
-      form.target = 'netlify-form-frame';
+      console.log('[Contact Form] Sending to /form.html with body:', formBody.toString());
 
-      const fields: Record<string, string> = {
-        'form-name': 'contact',
-        'name': data.name,
-        'email': data.email,
-        'phone': data.phone || '',
-        'role': data.role,
-        'organization': data.organization || '',
-        'school': data.school || '',
-        'subject': data.subject,
-        'message': data.message,
-        'centers': data.centers.join(', '),
-      };
+      const res = await fetch('/form.html', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: formBody.toString(),
+      });
 
-      for (const [key, value] of Object.entries(fields)) {
-        const input = document.createElement('input');
-        input.type = 'hidden';
-        input.name = key;
-        input.value = value;
-        form.appendChild(input);
-      }
+      console.log('[Contact Form] Response status:', res.status);
+      console.log('[Contact Form] Response URL:', res.url);
+      console.log('[Contact Form] Response ok:', res.ok);
 
-      document.body.appendChild(form);
-      form.submit();
-
-      // Clean up after a short delay
-      setTimeout(() => {
-        document.body.removeChild(form);
-        document.body.removeChild(iframe);
-      }, 2000);
+      const responseText = await res.text();
+      console.log('[Contact Form] Response body (first 500 chars):', responseText.substring(0, 500));
 
       setStatus('success');
       reset();
-    } catch {
+    } catch (err) {
+      console.error('[Contact Form] Error:', err);
       setStatus('error');
     }
   };
