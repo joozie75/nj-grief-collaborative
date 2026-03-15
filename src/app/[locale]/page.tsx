@@ -91,7 +91,7 @@ export default function Home() {
                 <Button variant="outline" size="lg">Resources for Schools</Button>
               </Link>
               <Link href="/get-involved">
-                <Button variant="ghost" size="lg">Get Involved</Button>
+                <Button variant="outline" size="lg">Get Involved</Button>
               </Link>
             </div>
           </div>
