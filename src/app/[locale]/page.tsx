@@ -21,7 +21,7 @@ const coalitionMembers = [
   {
     name: 'Good Grief',
     description: 'Supporting families after the death of a mother, father, brother, sister, or other significant person in their lives.',
-    location: 'Morristown, NJ',
+    location: 'Morristown & Princeton, NJ',
     logo: '/logos/good-grief.png',
   },
   {

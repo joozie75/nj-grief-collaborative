@@ -21,7 +21,7 @@ const members = [
   {
     name: 'Good Grief',
     description: 'Based in Morristown, Good Grief provides free, ongoing peer support programs for children and families after the death of a significant person. Their evidence-based programs serve families from across New Jersey.',
-    serviceArea: 'Northern NJ',
+    serviceArea: 'Morristown & Princeton, NJ',
     website: 'https://good-grief.org',
     logo: '/logos/good-grief.png',
   },
