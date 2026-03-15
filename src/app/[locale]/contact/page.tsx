@@ -61,7 +61,7 @@ export default function ContactPage() {
       formData.append('centers', data.centers.join(', '));
       formData.append('bot-field', data.honeypot);
 
-      const res = await fetch('/', {
+      const res = await fetch('/form.html', {
         method: 'POST',
         headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
         body: formData.toString(),
