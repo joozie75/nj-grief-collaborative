@@ -1,8 +1,6 @@
 import { NextResponse } from 'next/server';
 import { Resend } from 'resend';
 
-const resend = new Resend(process.env.RESEND_API_KEY);
-
 const ADMIN_EMAIL = 'jamesooi07078@gmail.com';
 
 export async function POST(request: Request) {
@@ -21,6 +19,7 @@ export async function POST(request: Request) {
     }
 
     const centersSelected = (centers as string[]).join(', ');
+    const resend = new Resend(process.env.RESEND_API_KEY);
 
     // Send notification to admin
     await resend.emails.send({
