@@ -10,15 +10,19 @@ interface SectionProps {
 }
 
 const bgStyles = {
-  white: 'bg-[#fffcf9]',
-  muted: 'bg-[#f8f5f0]',
+  white: '',
+  muted: '',
   primary: 'bg-teal-50',
   secondary: 'bg-purple-50',
 };
 
 export default function Section({ children, className = '', background = 'white', narrow = false, id }: SectionProps) {
   return (
-    <section id={id} className={`py-[var(--section-spacing)] ${bgStyles[background]} ${className}`}>
+    <section
+      id={id}
+      className={`py-[var(--section-spacing)] transition-colors duration-300 ${bgStyles[background]} ${className}`}
+      style={background === 'white' ? { backgroundColor: 'var(--color-background)' } : background === 'muted' ? { backgroundColor: 'var(--color-muted)' } : undefined}
+    >
       <Container narrow={narrow}>{children}</Container>
     </section>
   );

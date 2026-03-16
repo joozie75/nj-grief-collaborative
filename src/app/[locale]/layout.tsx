@@ -5,6 +5,8 @@ import { Lora, Nunito_Sans } from 'next/font/google';
 import { routing } from '@/i18n/routing';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
+import ThemeProvider from '@/components/ThemeProvider';
+import ThemeSwitcher from '@/components/ThemeSwitcher';
 import '../globals.css';
 
 const lora = Lora({
@@ -39,14 +41,17 @@ export default async function LocaleLayout({
   const messages = await getMessages();
 
   return (
-    <html lang={locale} className={`${lora.variable} ${nunitoSans.variable}`}>
+    <html lang={locale} className={`${lora.variable} ${nunitoSans.variable}`} data-theme="garden">
       <body className="min-h-screen flex flex-col antialiased">
         <NextIntlClientProvider messages={messages}>
-          <Header />
-          <main id="main-content" className="flex-1">
-            {children}
-          </main>
-          <Footer />
+          <ThemeProvider>
+            <Header />
+            <main id="main-content" className="flex-1">
+              {children}
+            </main>
+            <Footer />
+            <ThemeSwitcher />
+          </ThemeProvider>
         </NextIntlClientProvider>
       </body>
     </html>
