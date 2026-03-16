@@ -31,7 +31,7 @@ export default function Section({ children, className = '', background = 'white'
 export function SectionHeader({ title, subtitle, centered = true }: { title: string; subtitle?: string; centered?: boolean }) {
   return (
     <div className={`mb-12 ${centered ? 'text-center' : ''}`}>
-      <div className={`inline-flex items-center gap-3 mb-3 ${centered ? 'justify-center w-full' : ''}`}>
+      <div className={`section-ornament inline-flex items-center gap-3 mb-3 ${centered ? 'justify-center w-full' : ''}`}>
         <span className="w-8 h-1 rounded-full bg-gradient-to-r from-teal-400 to-green-400" aria-hidden="true" />
         <span className="w-3 h-3 rounded-full bg-purple-400" aria-hidden="true" />
         <span className="w-8 h-1 rounded-full bg-gradient-to-r from-warm-400 to-gold-400" aria-hidden="true" />

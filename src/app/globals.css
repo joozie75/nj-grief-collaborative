@@ -80,169 +80,25 @@
   }
 }
 
-/* ==============================
-   THEME: WARM (default)
-   Organic, rounded, colorful
-   ============================== */
+/* ================================================================
+   THEME 1: WARM
+   Organic, rounded, colorful nonprofit feel.
+   Imagine-inspired palette. Decorative blobs. Card-heavy layout.
+   ================================================================ */
 body {
   background: var(--color-background);
   color: var(--color-foreground);
   font-family: var(--font-sans);
   line-height: 1.7;
-  transition: background-color 0.4s ease, color 0.4s ease;
+  transition: background-color 0.5s ease, color 0.5s ease;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-serif);
   line-height: 1.2;
+  transition: color 0.5s ease;
 }
 
-/* ==============================
-   THEME: MODERN
-   Clean, minimal, sharp, airy
-   ============================== */
-[data-theme="modern"] {
-  --color-primary: #111827;
-  --color-primary-light: #f9fafb;
-  --color-primary-dark: #000000;
-  --color-secondary: #4f46e5;
-  --color-secondary-light: #eef2ff;
-  --color-accent: #4f46e5;
-  --color-accent-hover: #4338ca;
-  --color-background: #ffffff;
-  --color-foreground: #111827;
-  --color-muted: #f9fafb;
-  --color-muted-foreground: #6b7280;
-  --color-border: #e5e7eb;
-  --color-teal-50: #f9fafb;
-  --color-teal-100: #f3f4f6;
-  --color-teal-200: #e5e7eb;
-  --color-teal-300: #d1d5db;
-  --color-teal-400: #9ca3af;
-  --color-teal-500: #111827;
-  --color-teal-600: #000000;
-  --color-teal-700: #000000;
-  --color-purple-50: #eef2ff;
-  --color-purple-100: #e0e7ff;
-  --color-purple-200: #c7d2fe;
-  --color-purple-300: #a5b4fc;
-  --color-purple-400: #818cf8;
-  --color-purple-500: #4f46e5;
-  --color-purple-600: #4338ca;
-  --color-purple-700: #3730a3;
-  --color-green-50: #f9fafb;
-  --color-green-100: #f3f4f6;
-  --color-green-200: #e5e7eb;
-  --color-green-400: #9ca3af;
-  --color-warm-50: #f9fafb;
-  --color-warm-400: #6b7280;
-  --color-warm-500: #4f46e5;
-  --color-warm-600: #4338ca;
-  --color-warm-700: #3730a3;
-  --color-gold-100: #e0e7ff;
-  --color-gold-200: #c7d2fe;
-  --color-gold-400: #818cf8;
-}
-
-[data-theme="modern"] body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  line-height: 1.6;
-  letter-spacing: -0.01em;
-}
-
-[data-theme="modern"] h1,
-[data-theme="modern"] h2,
-[data-theme="modern"] h3,
-[data-theme="modern"] h4,
-[data-theme="modern"] h5,
-[data-theme="modern"] h6 {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  font-weight: 700;
-  letter-spacing: -0.03em;
-}
-
-[data-theme="modern"] .rounded-2xl { border-radius: 4px; }
-[data-theme="modern"] .rounded-xl { border-radius: 4px; }
-[data-theme="modern"] .rounded-lg { border-radius: 2px; }
-[data-theme="modern"] .rounded-full:not(button):not(a) { border-radius: 2px; }
-[data-theme="modern"] .shadow-sm { box-shadow: none; }
-[data-theme="modern"] .shadow-lg { box-shadow: 0 1px 3px rgba(0,0,0,0.08); }
-[data-theme="modern"] .shadow-xl { box-shadow: 0 2px 6px rgba(0,0,0,0.08); }
-[data-theme="modern"] .shadow-2xl { box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
-[data-theme="modern"] .organic-blob,
-[data-theme="modern"] .organic-blob-2 { display: none; }
-
-/* ==============================
-   THEME: BOLD
-   Dark, vibrant, editorial
-   ============================== */
-[data-theme="bold"] {
-  --color-primary: #a78bfa;
-  --color-primary-light: #1e1b2e;
-  --color-primary-dark: #c4b5fd;
-  --color-secondary: #f472b6;
-  --color-secondary-light: #2d1f35;
-  --color-accent: #34d399;
-  --color-accent-hover: #6ee7b7;
-  --color-background: #0f0f1a;
-  --color-foreground: #f1f0f5;
-  --color-muted: #1a1a2e;
-  --color-muted-foreground: #a1a1b5;
-  --color-border: #2d2d44;
-  --color-teal-50: #1e1b2e;
-  --color-teal-100: #2d2854;
-  --color-teal-200: #4c3d8f;
-  --color-teal-300: #7c6cbf;
-  --color-teal-400: #9b8ed8;
-  --color-teal-500: #a78bfa;
-  --color-teal-600: #c4b5fd;
-  --color-teal-700: #ddd6fe;
-  --color-purple-50: #2d1f35;
-  --color-purple-100: #4a2d52;
-  --color-purple-200: #7e3f7a;
-  --color-purple-300: #c05aa0;
-  --color-purple-400: #ec4899;
-  --color-purple-500: #f472b6;
-  --color-purple-600: #f9a8d4;
-  --color-purple-700: #fbcfe8;
-  --color-green-50: #0f2922;
-  --color-green-100: #154535;
-  --color-green-200: #1f7a5c;
-  --color-green-300: #34d399;
-  --color-green-400: #6ee7b7;
-  --color-green-500: #a7f3d0;
-  --color-warm-50: #1e1b2e;
-  --color-warm-400: #a78bfa;
-  --color-warm-500: #34d399;
-  --color-warm-600: #6ee7b7;
-  --color-warm-700: #a7f3d0;
-  --color-gold-100: #1f3a2e;
-  --color-gold-200: #2d6b4e;
-  --color-gold-400: #34d399;
-}
-
-[data-theme="bold"] body {
-  font-family: 'Nunito Sans', ui-sans-serif, system-ui, sans-serif;
-  line-height: 1.8;
-}
-
-[data-theme="bold"] h1,
-[data-theme="bold"] h2,
-[data-theme="bold"] h3,
-[data-theme="bold"] h4 {
-  font-family: 'Lora', ui-serif, Georgia, serif;
-  font-weight: 800;
-  letter-spacing: -0.02em;
-}
-
-[data-theme="bold"] .bg-white { background-color: #1a1a2e !important; }
-[data-theme="bold"] .border-white\\/80 { border-color: rgba(161,161,181,0.3) !important; }
-[data-theme="bold"] .text-white { color: #f1f0f5; }
-[data-theme="bold"] footer { background-color: #080810 !important; }
-
-/* ==============================
-   SHARED UTILITIES
-   ============================== */
 *:focus-visible {
   outline: 2px solid var(--color-primary);
   outline-offset: 2px;
@@ -259,7 +115,6 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 100;
   transition: top 0.2s;
 }
-
 .skip-link:focus { top: 0; }
 
 .organic-blob { border-radius: 42% 58% 70% 30% / 45% 45% 55% 55%; }
@@ -267,4 +122,296 @@ h1, h2, h3, h4, h5, h6 {
 
 .gradient-warmth {
   background: linear-gradient(135deg, var(--color-teal-50) 0%, var(--color-purple-50) 50%, var(--color-warm-50) 100%);
+}
+
+
+/* ================================================================
+   THEME 2: MODERN
+   Ultra-clean. Sharp edges. System font. Tons of whitespace.
+   Black text, white background, one indigo accent. No decorations.
+   Feels like a government/tech startup hybrid.
+   ================================================================ */
+[data-theme="modern"] {
+  --color-primary: #4f46e5;
+  --color-primary-light: #eef2ff;
+  --color-primary-dark: #3730a3;
+  --color-secondary: #111827;
+  --color-secondary-light: #f3f4f6;
+  --color-accent: #4f46e5;
+  --color-accent-hover: #4338ca;
+  --color-background: #ffffff;
+  --color-foreground: #111827;
+  --color-muted: #f9fafb;
+  --color-muted-foreground: #6b7280;
+  --color-border: #e5e7eb;
+  --color-teal-50: #eef2ff;
+  --color-teal-100: #e0e7ff;
+  --color-teal-200: #c7d2fe;
+  --color-teal-400: #818cf8;
+  --color-teal-500: #4f46e5;
+  --color-teal-600: #4338ca;
+  --color-teal-700: #3730a3;
+  --color-purple-50: #f9fafb;
+  --color-purple-100: #f3f4f6;
+  --color-purple-400: #6b7280;
+  --color-purple-500: #374151;
+  --color-green-50: #f9fafb;
+  --color-green-400: #4f46e5;
+  --color-warm-50: #eef2ff;
+  --color-warm-500: #4f46e5;
+  --color-warm-600: #4338ca;
+  --color-gold-100: #e0e7ff;
+  --color-gold-200: #c7d2fe;
+  --color-gold-400: #818cf8;
+  --section-spacing: 6rem;
+}
+
+/* Modern: Switch to system sans-serif everywhere */
+[data-theme="modern"] body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', Roboto, sans-serif;
+  line-height: 1.6;
+  letter-spacing: -0.01em;
+}
+[data-theme="modern"] h1,
+[data-theme="modern"] h2,
+[data-theme="modern"] h3,
+[data-theme="modern"] h4,
+[data-theme="modern"] h5,
+[data-theme="modern"] h6 {
+  font-family: -apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', Roboto, sans-serif;
+  font-weight: 800;
+  letter-spacing: -0.04em;
+}
+
+/* Modern: Kill all border radius — sharp edges */
+[data-theme="modern"] .rounded-2xl,
+[data-theme="modern"] .rounded-xl,
+[data-theme="modern"] .rounded-lg,
+[data-theme="modern"] .rounded-md {
+  border-radius: 0 !important;
+}
+[data-theme="modern"] .rounded-full:not(.theme-switcher-dot) {
+  border-radius: 0 !important;
+}
+
+/* Modern: Kill decorative elements */
+[data-theme="modern"] .organic-blob,
+[data-theme="modern"] .organic-blob-2 {
+  display: none !important;
+}
+
+/* Modern: Flat shadows */
+[data-theme="modern"] .shadow-sm { box-shadow: none !important; }
+[data-theme="modern"] .shadow-md,
+[data-theme="modern"] .shadow-lg { box-shadow: 0 1px 2px rgba(0,0,0,0.05) !important; }
+[data-theme="modern"] .shadow-xl,
+[data-theme="modern"] .shadow-2xl { box-shadow: 0 1px 3px rgba(0,0,0,0.08) !important; }
+
+/* Modern: Override gradients to be flat */
+[data-theme="modern"] .gradient-warmth {
+  background: #ffffff !important;
+}
+[data-theme="modern"] .bg-gradient-to-r,
+[data-theme="modern"] .bg-gradient-to-br {
+  background: var(--color-primary) !important;
+}
+
+/* Modern: Make header a thin line */
+[data-theme="modern"] header {
+  border-bottom: 2px solid #111827 !important;
+}
+
+/* Modern: Buttons are rectangles with borders */
+[data-theme="modern"] button[class*="rounded-full"],
+[data-theme="modern"] a[class*="rounded-full"] {
+  border-radius: 0 !important;
+}
+
+/* Modern: Section headers — underline instead of ornament */
+[data-theme="modern"] .section-ornament { display: none !important; }
+
+/* Modern: Larger, bolder headings */
+[data-theme="modern"] h1 { font-size: 3.5rem !important; }
+@media (min-width: 640px) {
+  [data-theme="modern"] h1 { font-size: 4.5rem !important; }
+}
+
+/* Modern: Cards are borderless with subtle bottom border */
+[data-theme="modern"] [data-card] {
+  border: none !important;
+  border-bottom: 2px solid #e5e7eb !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  background: transparent !important;
+}
+[data-theme="modern"] [data-card]:hover {
+  border-bottom-color: #4f46e5 !important;
+  transform: none !important;
+}
+
+
+/* ================================================================
+   THEME 3: BOLD
+   Dark mode. Vibrant neon accents. Large type. Dramatic gradients.
+   Editorial/magazine feel. Feels like a modern creative agency.
+   ================================================================ */
+[data-theme="bold"] {
+  --color-primary: #a78bfa;
+  --color-primary-light: #1e1b2e;
+  --color-primary-dark: #c4b5fd;
+  --color-secondary: #f472b6;
+  --color-secondary-light: #2d1f35;
+  --color-accent: #34d399;
+  --color-accent-hover: #6ee7b7;
+  --color-background: #0a0a14;
+  --color-foreground: #eeeef5;
+  --color-muted: #13132a;
+  --color-muted-foreground: #9898b0;
+  --color-border: #252545;
+  --color-teal-50: #1e1b2e;
+  --color-teal-100: #2d2854;
+  --color-teal-200: #4c3d8f;
+  --color-teal-400: #9b8ed8;
+  --color-teal-500: #a78bfa;
+  --color-teal-600: #c4b5fd;
+  --color-teal-700: #ddd6fe;
+  --color-purple-50: #1a0f24;
+  --color-purple-100: #3b1f48;
+  --color-purple-400: #ec4899;
+  --color-purple-500: #f472b6;
+  --color-green-50: #0a1f18;
+  --color-green-100: #0d3525;
+  --color-green-400: #34d399;
+  --color-warm-50: #1e1b2e;
+  --color-warm-500: #34d399;
+  --color-warm-600: #6ee7b7;
+  --color-gold-100: #1a2e1f;
+  --color-gold-200: #2d6b4e;
+  --color-gold-400: #34d399;
+  --section-spacing: 7rem;
+}
+
+/* Bold: Keep serif headings but make them huge and bold */
+[data-theme="bold"] body {
+  font-family: 'Nunito Sans', ui-sans-serif, system-ui, sans-serif;
+  line-height: 1.8;
+  letter-spacing: 0.01em;
+}
+[data-theme="bold"] h1,
+[data-theme="bold"] h2,
+[data-theme="bold"] h3,
+[data-theme="bold"] h4 {
+  font-family: 'Lora', ui-serif, Georgia, serif;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+/* Bold: Enormous headings */
+[data-theme="bold"] h1 { font-size: 3rem !important; }
+[data-theme="bold"] h2 { font-size: 2.5rem !important; }
+@media (min-width: 640px) {
+  [data-theme="bold"] h1 { font-size: 5rem !important; line-height: 1.05 !important; }
+  [data-theme="bold"] h2 { font-size: 3rem !important; }
+}
+
+/* Bold: Dark cards with colored left border */
+[data-theme="bold"] .bg-white,
+[data-theme="bold"] [data-card] {
+  background-color: #13132a !important;
+  border: 1px solid #252545 !important;
+  border-left: 4px solid #a78bfa !important;
+}
+[data-theme="bold"] [data-card]:nth-child(2n) {
+  border-left-color: #f472b6 !important;
+}
+[data-theme="bold"] [data-card]:nth-child(3n) {
+  border-left-color: #34d399 !important;
+}
+
+/* Bold: Footer even darker */
+[data-theme="bold"] footer {
+  background-color: #050508 !important;
+}
+
+/* Bold: Header with gradient bottom border */
+[data-theme="bold"] header {
+  background-color: rgba(10, 10, 20, 0.95) !important;
+  border-bottom: 2px solid transparent !important;
+  border-image: linear-gradient(to right, #a78bfa, #f472b6, #34d399) 1 !important;
+}
+
+/* Bold: Gradient text for section headings */
+[data-theme="bold"] h2 {
+  background: linear-gradient(135deg, #a78bfa 0%, #f472b6 50%, #34d399 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Bold: Override gradient sections */
+[data-theme="bold"] .gradient-warmth {
+  background: linear-gradient(135deg, #0a0a14 0%, #1e1b2e 50%, #1a0f24 100%) !important;
+}
+[data-theme="bold"] .bg-gradient-to-r,
+[data-theme="bold"] .bg-gradient-to-br {
+  background: linear-gradient(135deg, #1e1040 0%, #2d1050 50%, #0d3530 100%) !important;
+}
+
+/* Bold: Glowing buttons */
+[data-theme="bold"] button[class*="bg-gradient"],
+[data-theme="bold"] a[class*="bg-gradient"] {
+  box-shadow: 0 0 20px rgba(167, 139, 250, 0.3) !important;
+}
+[data-theme="bold"] button[class*="bg-gradient"]:hover,
+[data-theme="bold"] a[class*="bg-gradient"]:hover {
+  box-shadow: 0 0 30px rgba(167, 139, 250, 0.5) !important;
+}
+
+/* Bold: Rounded corners stay but more pronounced */
+[data-theme="bold"] .rounded-2xl { border-radius: 1.5rem !important; }
+[data-theme="bold"] .rounded-xl { border-radius: 1rem !important; }
+
+/* Bold: Make organic blobs glow */
+[data-theme="bold"] .organic-blob {
+  opacity: 0.15;
+  filter: blur(40px);
+}
+[data-theme="bold"] .organic-blob-2 {
+  opacity: 0.15;
+  filter: blur(40px);
+}
+
+/* Bold: Link colors */
+[data-theme="bold"] a:not([class]) {
+  color: #a78bfa;
+}
+[data-theme="bold"] a:not([class]):hover {
+  color: #c4b5fd;
+}
+
+/* Bold: Input fields dark */
+[data-theme="bold"] input,
+[data-theme="bold"] select,
+[data-theme="bold"] textarea {
+  background-color: #13132a !important;
+  border-color: #252545 !important;
+  color: #eeeef5 !important;
+}
+[data-theme="bold"] input::placeholder,
+[data-theme="bold"] textarea::placeholder {
+  color: #6b6b85 !important;
+}
+
+/* Bold: Form labels */
+[data-theme="bold"] label {
+  color: #c0c0d0 !important;
+}
+
+/* Bold: Badges */
+[data-theme="bold"] [class*="bg-teal-100"],
+[data-theme="bold"] [class*="bg-purple-100"],
+[data-theme="bold"] [class*="bg-gold-100"],
+[data-theme="bold"] [class*="bg-warm-100"] {
+  background-color: rgba(167, 139, 250, 0.15) !important;
+  color: #c4b5fd !important;
 }

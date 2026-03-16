@@ -9,6 +9,7 @@ interface CardProps {
 export default function Card({ children, className = '', hover = true }: CardProps) {
   return (
     <div
+      data-card
       className={`rounded-2xl p-6 shadow-sm transition-all duration-300 ${
         hover ? 'hover:shadow-lg hover:-translate-y-0.5' : ''
       } ${className}`}
