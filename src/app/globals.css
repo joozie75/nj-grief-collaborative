@@ -1,9 +1,5 @@
 @import "tailwindcss";
 
-/* ============================================
-   THEME: GARDEN (default) — Imagine logo colors
-   Warm teals, purples, greens
-   ============================================ */
 @theme inline {
   --color-teal-50: #eef6f6;
   --color-teal-100: #d4ebeb;
@@ -15,7 +11,6 @@
   --color-teal-700: #3e6363;
   --color-teal-800: #2d4c4c;
   --color-teal-900: #1c3535;
-
   --color-purple-50: #f5edf7;
   --color-purple-100: #e8d4ed;
   --color-purple-200: #d1a9db;
@@ -26,7 +21,6 @@
   --color-purple-700: #562960;
   --color-purple-800: #411f49;
   --color-purple-900: #2c1532;
-
   --color-green-50: #f4fae8;
   --color-green-100: #e5f3c7;
   --color-green-200: #cde896;
@@ -37,7 +31,6 @@
   --color-green-700: #4d7c25;
   --color-green-800: #356216;
   --color-green-900: #1d4807;
-
   --color-warm-50: #fdf6f3;
   --color-warm-100: #f9e8e0;
   --color-warm-200: #f0c9b8;
@@ -48,7 +41,6 @@
   --color-warm-700: #7e311b;
   --color-warm-800: #602515;
   --color-warm-900: #42190f;
-
   --color-gold-50: #fffbeb;
   --color-gold-100: #fef3c7;
   --color-gold-200: #fde68a;
@@ -59,19 +51,10 @@
   --color-gold-700: #b45309;
   --color-gold-800: #92400e;
   --color-gold-900: #78350f;
-
   --color-olive-50: #f7f7e8;
   --color-olive-100: #ecebc5;
   --color-olive-200: #d8d78e;
-  --color-olive-300: #c4c357;
-  --color-olive-400: #b0af35;
-  --color-olive-500: #96962d;
-  --color-olive-600: #7a7a24;
-  --color-olive-700: #5e5e1b;
-  --color-olive-800: #424212;
-  --color-olive-900: #262609;
 
-  /* Semantic colors — Garden defaults */
   --color-primary: var(--color-teal-500);
   --color-primary-light: var(--color-teal-50);
   --color-primary-dark: var(--color-teal-700);
@@ -79,7 +62,6 @@
   --color-secondary-light: var(--color-purple-50);
   --color-accent: var(--color-warm-500);
   --color-accent-hover: var(--color-warm-600);
-
   --color-background: #fffcf9;
   --color-foreground: #2c2c3a;
   --color-muted: #f8f5f0;
@@ -88,7 +70,6 @@
 
   --font-sans: "Nunito Sans", ui-sans-serif, system-ui, sans-serif;
   --font-serif: "Lora", ui-serif, Georgia, serif;
-
   --container-padding: 1rem;
   --section-spacing: 5rem;
 }
@@ -99,122 +80,16 @@
   }
 }
 
-/* ============================================
-   THEME: SUNSET
-   Warm terracotta, deep navy, golden sand
-   ============================================ */
-[data-theme="sunset"] {
-  --color-primary: #e07a5f;
-  --color-primary-light: #fef0ec;
-  --color-primary-dark: #c45a3f;
-  --color-secondary: #3d405b;
-  --color-secondary-light: #eeeef2;
-  --color-accent: #f2cc8f;
-  --color-accent-hover: #e6b96e;
-  --color-background: #fffaf5;
-  --color-foreground: #2d2d3a;
-  --color-muted: #f5f0eb;
-  --color-muted-foreground: #6b6570;
-  --color-border: #e8ddd4;
-
-  /* Override specific color scales for components */
-  --color-teal-50: #fef0ec;
-  --color-teal-100: #fcddd4;
-  --color-teal-200: #f8b9a8;
-  --color-teal-300: #f2957d;
-  --color-teal-400: #e8876b;
-  --color-teal-500: #e07a5f;
-  --color-teal-600: #c45a3f;
-  --color-teal-700: #a04030;
-  --color-purple-50: #eeeef2;
-  --color-purple-100: #d5d5de;
-  --color-purple-200: #b0b0c0;
-  --color-purple-300: #8a8aa2;
-  --color-purple-400: #6a6a84;
-  --color-purple-500: #3d405b;
-  --color-purple-600: #31344a;
-  --color-purple-700: #252839;
-  --color-green-50: #fdf8ec;
-  --color-green-100: #faf0d0;
-  --color-green-200: #f5e2a5;
-  --color-green-300: #f2d47a;
-  --color-green-400: #f2cc8f;
-  --color-green-500: #e6b96e;
-  --color-warm-50: #fef0ec;
-  --color-warm-100: #fcddd4;
-  --color-warm-200: #f8b9a8;
-  --color-warm-300: #f2957d;
-  --color-warm-400: #e8876b;
-  --color-warm-500: #e07a5f;
-  --color-warm-600: #c45a3f;
-  --color-warm-700: #a04030;
-  --color-gold-100: #faf0d0;
-  --color-gold-200: #f5e2a5;
-  --color-gold-400: #f2cc8f;
-}
-
-/* ============================================
-   THEME: OCEAN
-   Cool blues, soft teals, crisp white
-   ============================================ */
-[data-theme="ocean"] {
-  --color-primary: #0077b6;
-  --color-primary-light: #e8f4fa;
-  --color-primary-dark: #005a8c;
-  --color-secondary: #023e8a;
-  --color-secondary-light: #e6edf7;
-  --color-accent: #00b4d8;
-  --color-accent-hover: #0096b7;
-  --color-background: #f8fbff;
-  --color-foreground: #1a2332;
-  --color-muted: #eef3f8;
-  --color-muted-foreground: #546a7b;
-  --color-border: #d4e0ec;
-
-  --color-teal-50: #e8f4fa;
-  --color-teal-100: #cae8f5;
-  --color-teal-200: #90d5ed;
-  --color-teal-300: #48bfe6;
-  --color-teal-400: #0096c7;
-  --color-teal-500: #0077b6;
-  --color-teal-600: #005a8c;
-  --color-teal-700: #004466;
-  --color-purple-50: #e6edf7;
-  --color-purple-100: #c4d4ea;
-  --color-purple-200: #8ea9d5;
-  --color-purple-300: #587ec0;
-  --color-purple-400: #2e5aaa;
-  --color-purple-500: #023e8a;
-  --color-purple-600: #02326e;
-  --color-purple-700: #012652;
-  --color-green-50: #e6f8fa;
-  --color-green-100: #b8ecf3;
-  --color-green-200: #90e0ef;
-  --color-green-300: #48cae4;
-  --color-green-400: #00b4d8;
-  --color-green-500: #0096b7;
-  --color-warm-50: #e8f4fa;
-  --color-warm-100: #cae8f5;
-  --color-warm-200: #90d5ed;
-  --color-warm-300: #48bfe6;
-  --color-warm-400: #0096c7;
-  --color-warm-500: #00b4d8;
-  --color-warm-600: #0096b7;
-  --color-warm-700: #007896;
-  --color-gold-100: #b8ecf3;
-  --color-gold-200: #90e0ef;
-  --color-gold-400: #48cae4;
-}
-
-/* ============================================
-   BASE STYLES
-   ============================================ */
+/* ==============================
+   THEME: WARM (default)
+   Organic, rounded, colorful
+   ============================== */
 body {
   background: var(--color-background);
   color: var(--color-foreground);
   font-family: var(--font-sans);
   line-height: 1.7;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  transition: background-color 0.4s ease, color 0.4s ease;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -222,6 +97,152 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.2;
 }
 
+/* ==============================
+   THEME: MODERN
+   Clean, minimal, sharp, airy
+   ============================== */
+[data-theme="modern"] {
+  --color-primary: #111827;
+  --color-primary-light: #f9fafb;
+  --color-primary-dark: #000000;
+  --color-secondary: #4f46e5;
+  --color-secondary-light: #eef2ff;
+  --color-accent: #4f46e5;
+  --color-accent-hover: #4338ca;
+  --color-background: #ffffff;
+  --color-foreground: #111827;
+  --color-muted: #f9fafb;
+  --color-muted-foreground: #6b7280;
+  --color-border: #e5e7eb;
+  --color-teal-50: #f9fafb;
+  --color-teal-100: #f3f4f6;
+  --color-teal-200: #e5e7eb;
+  --color-teal-300: #d1d5db;
+  --color-teal-400: #9ca3af;
+  --color-teal-500: #111827;
+  --color-teal-600: #000000;
+  --color-teal-700: #000000;
+  --color-purple-50: #eef2ff;
+  --color-purple-100: #e0e7ff;
+  --color-purple-200: #c7d2fe;
+  --color-purple-300: #a5b4fc;
+  --color-purple-400: #818cf8;
+  --color-purple-500: #4f46e5;
+  --color-purple-600: #4338ca;
+  --color-purple-700: #3730a3;
+  --color-green-50: #f9fafb;
+  --color-green-100: #f3f4f6;
+  --color-green-200: #e5e7eb;
+  --color-green-400: #9ca3af;
+  --color-warm-50: #f9fafb;
+  --color-warm-400: #6b7280;
+  --color-warm-500: #4f46e5;
+  --color-warm-600: #4338ca;
+  --color-warm-700: #3730a3;
+  --color-gold-100: #e0e7ff;
+  --color-gold-200: #c7d2fe;
+  --color-gold-400: #818cf8;
+}
+
+[data-theme="modern"] body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  line-height: 1.6;
+  letter-spacing: -0.01em;
+}
+
+[data-theme="modern"] h1,
+[data-theme="modern"] h2,
+[data-theme="modern"] h3,
+[data-theme="modern"] h4,
+[data-theme="modern"] h5,
+[data-theme="modern"] h6 {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+}
+
+[data-theme="modern"] .rounded-2xl { border-radius: 4px; }
+[data-theme="modern"] .rounded-xl { border-radius: 4px; }
+[data-theme="modern"] .rounded-lg { border-radius: 2px; }
+[data-theme="modern"] .rounded-full:not(button):not(a) { border-radius: 2px; }
+[data-theme="modern"] .shadow-sm { box-shadow: none; }
+[data-theme="modern"] .shadow-lg { box-shadow: 0 1px 3px rgba(0,0,0,0.08); }
+[data-theme="modern"] .shadow-xl { box-shadow: 0 2px 6px rgba(0,0,0,0.08); }
+[data-theme="modern"] .shadow-2xl { box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+[data-theme="modern"] .organic-blob,
+[data-theme="modern"] .organic-blob-2 { display: none; }
+
+/* ==============================
+   THEME: BOLD
+   Dark, vibrant, editorial
+   ============================== */
+[data-theme="bold"] {
+  --color-primary: #a78bfa;
+  --color-primary-light: #1e1b2e;
+  --color-primary-dark: #c4b5fd;
+  --color-secondary: #f472b6;
+  --color-secondary-light: #2d1f35;
+  --color-accent: #34d399;
+  --color-accent-hover: #6ee7b7;
+  --color-background: #0f0f1a;
+  --color-foreground: #f1f0f5;
+  --color-muted: #1a1a2e;
+  --color-muted-foreground: #a1a1b5;
+  --color-border: #2d2d44;
+  --color-teal-50: #1e1b2e;
+  --color-teal-100: #2d2854;
+  --color-teal-200: #4c3d8f;
+  --color-teal-300: #7c6cbf;
+  --color-teal-400: #9b8ed8;
+  --color-teal-500: #a78bfa;
+  --color-teal-600: #c4b5fd;
+  --color-teal-700: #ddd6fe;
+  --color-purple-50: #2d1f35;
+  --color-purple-100: #4a2d52;
+  --color-purple-200: #7e3f7a;
+  --color-purple-300: #c05aa0;
+  --color-purple-400: #ec4899;
+  --color-purple-500: #f472b6;
+  --color-purple-600: #f9a8d4;
+  --color-purple-700: #fbcfe8;
+  --color-green-50: #0f2922;
+  --color-green-100: #154535;
+  --color-green-200: #1f7a5c;
+  --color-green-300: #34d399;
+  --color-green-400: #6ee7b7;
+  --color-green-500: #a7f3d0;
+  --color-warm-50: #1e1b2e;
+  --color-warm-400: #a78bfa;
+  --color-warm-500: #34d399;
+  --color-warm-600: #6ee7b7;
+  --color-warm-700: #a7f3d0;
+  --color-gold-100: #1f3a2e;
+  --color-gold-200: #2d6b4e;
+  --color-gold-400: #34d399;
+}
+
+[data-theme="bold"] body {
+  font-family: 'Nunito Sans', ui-sans-serif, system-ui, sans-serif;
+  line-height: 1.8;
+}
+
+[data-theme="bold"] h1,
+[data-theme="bold"] h2,
+[data-theme="bold"] h3,
+[data-theme="bold"] h4 {
+  font-family: 'Lora', ui-serif, Georgia, serif;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+[data-theme="bold"] .bg-white { background-color: #1a1a2e !important; }
+[data-theme="bold"] .border-white\\/80 { border-color: rgba(161,161,181,0.3) !important; }
+[data-theme="bold"] .text-white { color: #f1f0f5; }
+[data-theme="bold"] footer { background-color: #080810 !important; }
+
+/* ==============================
+   SHARED UTILITIES
+   ============================== */
 *:focus-visible {
   outline: 2px solid var(--color-primary);
   outline-offset: 2px;
@@ -239,23 +260,11 @@ h1, h2, h3, h4, h5, h6 {
   transition: top 0.2s;
 }
 
-.skip-link:focus {
-  top: 0;
-}
+.skip-link:focus { top: 0; }
 
-/* Decorative organic shapes */
-.organic-blob {
-  border-radius: 42% 58% 70% 30% / 45% 45% 55% 55%;
-}
-
-.organic-blob-2 {
-  border-radius: 60% 40% 30% 70% / 50% 60% 40% 50%;
-}
+.organic-blob { border-radius: 42% 58% 70% 30% / 45% 45% 55% 55%; }
+.organic-blob-2 { border-radius: 60% 40% 30% 70% / 50% 60% 40% 50%; }
 
 .gradient-warmth {
   background: linear-gradient(135deg, var(--color-teal-50) 0%, var(--color-purple-50) 50%, var(--color-warm-50) 100%);
-}
-
-.gradient-nature {
-  background: linear-gradient(135deg, var(--color-green-50) 0%, var(--color-teal-50) 50%, var(--color-olive-50) 100%);
 }

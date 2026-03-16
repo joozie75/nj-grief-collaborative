@@ -41,7 +41,7 @@ export default async function LocaleLayout({
   const messages = await getMessages();
 
   return (
-    <html lang={locale} className={`${lora.variable} ${nunitoSans.variable}`} data-theme="garden">
+    <html lang={locale} className={`${lora.variable} ${nunitoSans.variable}`} data-theme="warm">
       <body className="min-h-screen flex flex-col antialiased">
         <NextIntlClientProvider messages={messages}>
           <ThemeProvider>

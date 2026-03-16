@@ -2,13 +2,13 @@
 
 import { createContext, useContext, useState, useEffect, type ReactNode } from 'react';
 
-type Theme = 'garden' | 'sunset' | 'ocean';
+type Theme = 'warm' | 'modern' | 'bold';
 
 const ThemeContext = createContext<{
   theme: Theme;
   setTheme: (theme: Theme) => void;
 }>({
-  theme: 'garden',
+  theme: 'warm',
   setTheme: () => {},
 });
 
@@ -17,11 +17,11 @@ export function useTheme() {
 }
 
 export default function ThemeProvider({ children }: { children: ReactNode }) {
-  const [theme, setTheme] = useState<Theme>('garden');
+  const [theme, setTheme] = useState<Theme>('warm');
 
   useEffect(() => {
     const saved = localStorage.getItem('njgc-theme') as Theme | null;
-    if (saved && ['garden', 'sunset', 'ocean'].includes(saved)) {
+    if (saved && ['warm', 'modern', 'bold'].includes(saved)) {
       setTheme(saved);
     }
   }, []);
