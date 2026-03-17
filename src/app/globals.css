@@ -256,38 +256,38 @@ h1, h2, h3, h4, h5, h6 {
    Editorial/magazine feel. Feels like a modern creative agency.
    ================================================================ */
 [data-theme="bold"] {
-  --color-primary: #a78bfa;
-  --color-primary-light: #1e1b2e;
-  --color-primary-dark: #c4b5fd;
-  --color-secondary: #f472b6;
-  --color-secondary-light: #2d1f35;
-  --color-accent: #34d399;
-  --color-accent-hover: #6ee7b7;
-  --color-background: #0a0a14;
-  --color-foreground: #eeeef5;
-  --color-muted: #13132a;
-  --color-muted-foreground: #9898b0;
-  --color-border: #252545;
-  --color-teal-50: #1e1b2e;
-  --color-teal-100: #2d2854;
-  --color-teal-200: #4c3d8f;
-  --color-teal-400: #9b8ed8;
-  --color-teal-500: #a78bfa;
-  --color-teal-600: #c4b5fd;
-  --color-teal-700: #ddd6fe;
-  --color-purple-50: #1a0f24;
-  --color-purple-100: #3b1f48;
-  --color-purple-400: #ec4899;
-  --color-purple-500: #f472b6;
-  --color-green-50: #0a1f18;
-  --color-green-100: #0d3525;
-  --color-green-400: #34d399;
-  --color-warm-50: #1e1b2e;
-  --color-warm-500: #34d399;
-  --color-warm-600: #6ee7b7;
-  --color-gold-100: #1a2e1f;
-  --color-gold-200: #2d6b4e;
-  --color-gold-400: #34d399;
+  --color-primary: #7c5cbf;
+  --color-primary-light: #f3eff8;
+  --color-primary-dark: #5b3d96;
+  --color-secondary: #d94f8a;
+  --color-secondary-light: #fdf0f5;
+  --color-accent: #2aa87a;
+  --color-accent-hover: #238f68;
+  --color-background: #fafafa;
+  --color-foreground: #1a1a2e;
+  --color-muted: #f0edf5;
+  --color-muted-foreground: #5a5672;
+  --color-border: #ddd6ee;
+  --color-teal-50: #f3eff8;
+  --color-teal-100: #e4ddf0;
+  --color-teal-200: #c9b8e2;
+  --color-teal-400: #9678cc;
+  --color-teal-500: #7c5cbf;
+  --color-teal-600: #5b3d96;
+  --color-teal-700: #42297a;
+  --color-purple-50: #fdf0f5;
+  --color-purple-100: #f9d4e5;
+  --color-purple-400: #e06da0;
+  --color-purple-500: #d94f8a;
+  --color-green-50: #ecf9f3;
+  --color-green-100: #c8eeda;
+  --color-green-400: #2aa87a;
+  --color-warm-50: #f3eff8;
+  --color-warm-500: #2aa87a;
+  --color-warm-600: #238f68;
+  --color-gold-100: #c8eeda;
+  --color-gold-200: #8dddb3;
+  --color-gold-400: #2aa87a;
   --section-spacing: 7rem;
 }
 
@@ -314,35 +314,33 @@ h1, h2, h3, h4, h5, h6 {
   [data-theme="bold"] h2 { font-size: 3rem !important; }
 }
 
-/* Bold: Dark cards with colored left border */
-[data-theme="bold"] .bg-white,
+/* Bold: Cards with colored left border on light background */
 [data-theme="bold"] [data-card] {
-  background-color: #13132a !important;
-  border: 1px solid #252545 !important;
-  border-left: 4px solid #a78bfa !important;
+  background-color: #ffffff !important;
+  border: 1px solid #ddd6ee !important;
+  border-left: 4px solid #7c5cbf !important;
 }
 [data-theme="bold"] [data-card]:nth-child(2n) {
-  border-left-color: #f472b6 !important;
+  border-left-color: #d94f8a !important;
 }
 [data-theme="bold"] [data-card]:nth-child(3n) {
-  border-left-color: #34d399 !important;
+  border-left-color: #2aa87a !important;
 }
 
-/* Bold: Footer even darker */
+/* Bold: Footer dark purple */
 [data-theme="bold"] footer {
-  background-color: #050508 !important;
+  background-color: #1a1a2e !important;
 }
 
 /* Bold: Header with gradient bottom border */
 [data-theme="bold"] header {
-  background-color: rgba(10, 10, 20, 0.95) !important;
-  border-bottom: 2px solid transparent !important;
-  border-image: linear-gradient(to right, #a78bfa, #f472b6, #34d399) 1 !important;
+  border-bottom: 3px solid transparent !important;
+  border-image: linear-gradient(to right, #7c5cbf, #d94f8a, #2aa87a) 1 !important;
 }
 
 /* Bold: Gradient text for section headings */
 [data-theme="bold"] h2 {
-  background: linear-gradient(135deg, #a78bfa 0%, #f472b6 50%, #34d399 100%);
+  background: linear-gradient(135deg, #7c5cbf 0%, #d94f8a 50%, #2aa87a 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -350,61 +348,19 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Bold: Override gradient sections */
 [data-theme="bold"] .gradient-warmth {
-  background: linear-gradient(135deg, #0a0a14 0%, #1e1b2e 50%, #1a0f24 100%) !important;
-}
-[data-theme="bold"] .bg-gradient-to-r,
-[data-theme="bold"] .bg-gradient-to-br {
-  background: linear-gradient(135deg, #1e1040 0%, #2d1050 50%, #0d3530 100%) !important;
+  background: linear-gradient(135deg, #f3eff8 0%, #fdf0f5 50%, #ecf9f3 100%) !important;
 }
 
-/* Bold: Glowing buttons */
-[data-theme="bold"] button[class*="bg-gradient"],
-[data-theme="bold"] a[class*="bg-gradient"] {
-  box-shadow: 0 0 20px rgba(167, 139, 250, 0.3) !important;
-}
-[data-theme="bold"] button[class*="bg-gradient"]:hover,
-[data-theme="bold"] a[class*="bg-gradient"]:hover {
-  box-shadow: 0 0 30px rgba(167, 139, 250, 0.5) !important;
-}
-
-/* Bold: Rounded corners stay but more pronounced */
+/* Bold: Rounded corners more pronounced */
 [data-theme="bold"] .rounded-2xl { border-radius: 1.5rem !important; }
 [data-theme="bold"] .rounded-xl { border-radius: 1rem !important; }
 
-/* Bold: Make organic blobs glow */
-[data-theme="bold"] .organic-blob {
-  opacity: 0.15;
-  filter: blur(40px);
-}
-[data-theme="bold"] .organic-blob-2 {
-  opacity: 0.15;
-  filter: blur(40px);
-}
-
 /* Bold: Link colors */
 [data-theme="bold"] a:not([class]) {
-  color: #a78bfa;
+  color: #7c5cbf;
 }
 [data-theme="bold"] a:not([class]):hover {
-  color: #c4b5fd;
-}
-
-/* Bold: Input fields dark */
-[data-theme="bold"] input,
-[data-theme="bold"] select,
-[data-theme="bold"] textarea {
-  background-color: #13132a !important;
-  border-color: #252545 !important;
-  color: #eeeef5 !important;
-}
-[data-theme="bold"] input::placeholder,
-[data-theme="bold"] textarea::placeholder {
-  color: #6b6b85 !important;
-}
-
-/* Bold: Form labels */
-[data-theme="bold"] label {
-  color: #c0c0d0 !important;
+  color: #5b3d96;
 }
 
 /* Bold: Badges */
@@ -412,6 +368,6 @@ h1, h2, h3, h4, h5, h6 {
 [data-theme="bold"] [class*="bg-purple-100"],
 [data-theme="bold"] [class*="bg-gold-100"],
 [data-theme="bold"] [class*="bg-warm-100"] {
-  background-color: rgba(167, 139, 250, 0.15) !important;
-  color: #c4b5fd !important;
+  background-color: rgba(124, 92, 191, 0.1) !important;
+  color: #5b3d96 !important;
 }
