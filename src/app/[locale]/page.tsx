@@ -46,7 +46,7 @@ function WarmLayout({ t }: { t: ReturnType<typeof useTranslations<'page.home'>> 
     { quote: t('voice3'), role: t('parent') },
   ];
   const mandateBullets = [t('mandateBullet1'), t('mandateBullet2'), t('mandateBullet3'), t('mandateBullet4')];
-  const traits = [t('schoolsTrait1'), t('schoolsTrait2'), t('schoolsTrait3'), t('schoolsTrait4'), t('schoolsTrait5')];
+  const traits = [t('schoolsTrait1'), t('schoolsTrait2'), t('schoolsTrait3'), t('schoolsTrait4')];
 
   return (
     <>
@@ -151,7 +151,7 @@ function ModernLayout({ t }: { t: ReturnType<typeof useTranslations<'page.home'>
     { quote: t('voice3'), role: t('parent') },
   ];
   const mandateBullets = [t('mandateBullet1'), t('mandateBullet2'), t('mandateBullet3'), t('mandateBullet4')];
-  const traits = [t('schoolsTrait1'), t('schoolsTrait2'), t('schoolsTrait3'), t('schoolsTrait4'), t('schoolsTrait5')];
+  const traits = [t('schoolsTrait1'), t('schoolsTrait2'), t('schoolsTrait3'), t('schoolsTrait4')];
 
   return (
     <>
@@ -270,7 +270,7 @@ function BoldLayout({ t }: { t: ReturnType<typeof useTranslations<'page.home'>> 
     { quote: t('voice3'), role: t('parent') },
   ];
   const mandateBullets = [t('mandateBullet1'), t('mandateBullet2'), t('mandateBullet3'), t('mandateBullet4')];
-  const traits = [t('schoolsTrait1'), t('schoolsTrait2'), t('schoolsTrait3'), t('schoolsTrait4'), t('schoolsTrait5')];
+  const traits = [t('schoolsTrait1'), t('schoolsTrait2'), t('schoolsTrait3'), t('schoolsTrait4')];
 
   return (
     <>

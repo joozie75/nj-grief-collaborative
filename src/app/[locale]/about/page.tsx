@@ -42,7 +42,7 @@ const members = [
 ];
 
 const whyPoints = [
-  'Shared concern for students coping with loss during their school day',
+  'Shared concern for students coping with loss during their school days',
   'A shared commitment to supporting educators who work with students who are grieving every day',
   'Recognition that loss is a universal experience and communities need access to accurate, current and best practice resources',
 ];

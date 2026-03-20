@@ -8,8 +8,7 @@ import Button from '@/components/ui/Button';
 const griefInformedTraits = [
   'Recognizes that loss impacts learning and creates systems that support students throughout their school experience',
   'Prepares educators with professional development to support students and colleagues',
-  'Integrates grief education into the school day thoughtfully',
-  'Creates space for questions without requiring disclosure',
+  'Integrates grief education into the school day thoughtfully and with sensitivity without requiring self-disclosure from students',
   'Provides pathways to additional support when needed',
 ];
 
@@ -84,7 +83,7 @@ export default function GriefInformedSchoolsPage() {
           ))}
         </ul>
         <p className="mt-8 text-muted-foreground text-lg leading-relaxed italic">
-          When grief is addressed proactively, it can help grieving students become more equipped to concentrate, and in turn, be more prepared for learning.
+          Schools who are grief-informed can create more supportive learning environments for students and the school community as a whole. When grief is addressed proactively, it can help grieving students become more equipped to concentrate, and in turn, be more prepared for learning.
         </p>
       </Section>
 
